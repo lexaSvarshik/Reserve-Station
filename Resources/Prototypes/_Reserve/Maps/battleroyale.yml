@@ -6,7 +6,7 @@
   randomRotation: false
   minPlayers: 0
   stations:
-    Battleroyale:
+    BattleRoyale:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup
@@ -16,4 +16,4 @@
             prefixCreator: 'Королевская'
         - type: StationJobs
           availableJobs:
-            Assistant: [-1, -1]
+            Passenger: [ -1, -1 ]
