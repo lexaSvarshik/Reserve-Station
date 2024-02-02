@@ -188,6 +188,10 @@
   - type: PhysicalComposition #Goobstation - Recycle update
     materialComposition:
       Paper: 25
+  # Corvax-Printer-Start
+      SheetPrinter: 100
+  - type: Material
+  # Corvax-Printer-End
 
 - type: entity
   name: paper
@@ -220,6 +224,7 @@
   - type: Construction
     graph: SpesosCounterfeit
     node: start
+
 
 - type: entity
   name: paper scrap
