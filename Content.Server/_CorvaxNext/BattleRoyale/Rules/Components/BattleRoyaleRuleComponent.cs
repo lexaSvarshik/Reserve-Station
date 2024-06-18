@@ -1,5 +1,5 @@
 using Content.Shared.Roles;
-using Content.Shared.FixedPoint;
+using Content.Goobstation.Maths.FixedPoint;
 using Content.Shared.Storage;
 using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
@@ -18,7 +18,7 @@ public sealed partial class BattleRoyaleRuleComponent : Component
 
     [DataField]
     public EntityUid? Victor;
-	
+
 	[DataField, AutoNetworkedField, ViewVariables(VVAccess.ReadWrite)]
     public bool WinnerAnnounced = false;
 }

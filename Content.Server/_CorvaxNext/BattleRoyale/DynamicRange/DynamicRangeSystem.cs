@@ -7,7 +7,7 @@ using Content.Server.Audio;
 using Content.Server.Station.Systems;
 using Content.Shared.Damage;
 using Content.Shared.Audio;
-using Content.Shared.FixedPoint;
+using Content.Goobstation.Maths.FixedPoint;
 using Content.Shared.Mobs.Components;
 using Robust.Shared.Physics.Systems;
 using Robust.Shared.Map;
@@ -28,7 +28,7 @@ public sealed class DynamicRangeSystem : EntitySystem
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly DamageableSystem _damageableSystem = default!;
     [Dependency] private readonly EntityLookupSystem _lookup = default!;
-    [Dependency] private readonly ServerGlobalSoundSystem _sound = default!; 
+    [Dependency] private readonly ServerGlobalSoundSystem _sound = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly StationSystem _stationSystem = default!;
 
@@ -43,7 +43,7 @@ public sealed class DynamicRangeSystem : EntitySystem
         SubscribeLocalEvent<DynamicRangeComponent, ComponentStartup>(OnDynamicRangeStartup);
         SubscribeLocalEvent<DynamicRangeComponent, ComponentShutdown>(OnDynamicRangeShutdown);
         SubscribeLocalEvent<DynamicRangeComponent, AfterAutoHandleStateEvent>(OnDynamicRangeChanged);
-        
+
         SubscribeLocalEvent<DynamicRangeComponent, MapInitEvent>(OnDynamicRangeMapInit);
 
         _mapQuery = GetEntityQuery<MapComponent>();
@@ -65,7 +65,7 @@ public sealed class DynamicRangeSystem : EntitySystem
         var query = EntityQueryEnumerator<DynamicRangeComponent>();
         while (query.MoveNext(out var uid, out var comp))
         {
-            if (_restrictedRangeQuery.TryComp(uid, out var restrictedRange) && 
+            if (_restrictedRangeQuery.TryComp(uid, out var restrictedRange) &&
                 EntityManager.EntityExists(restrictedRange.BoundaryEntity))
             {
                 RemoveBoundaryEntity(uid);
@@ -90,13 +90,13 @@ public sealed class DynamicRangeSystem : EntitySystem
                 comp.PreviousShrinking = comp.IsShrinking;
                 comp.PreviousShrinkTime = comp.ShrinkTime;
                 comp.PreviousMinRange = comp.MinimumRange;
-                
+
                 if (comp.IsShrinking && (!comp.ShrinkStartTime.HasValue || !comp.InitialRange.HasValue))
                 {
                     comp.ShrinkStartTime = curTime;
                     comp.InitialRange = comp.Range;
                 }
-                    
+
                 continue;
             }
 
@@ -143,7 +143,7 @@ public sealed class DynamicRangeSystem : EntitySystem
                 if (!comp.PlayedShrinkMusic && shrinkProgress > 0)
                 {
                     var timeToMinimum = comp.ShrinkTime * (1 - shrinkProgress);
-                    
+
                     if (timeToMinimum <= comp.MusicStartTime)
                     {
                         PlayShrinkMusic(uid, comp);
@@ -202,7 +202,7 @@ public sealed class DynamicRangeSystem : EntitySystem
                                 { comp.DamageType, FixedPoint2.New(comp.OutOfBoundsDamage) }
                             }
                         };
-                        
+
                         _damageableSystem.TryChangeDamage(player, suffocationDamage, origin: uid);
                         comp.LastDamageTimes[player] = curTime;
                     }
@@ -223,12 +223,12 @@ public sealed class DynamicRangeSystem : EntitySystem
         var selectedMusic = _audio.ResolveSound(component.ShrinkMusic);
         if (ResolvedSoundSpecifier.IsNullOrEmpty(selectedMusic))
             return;
-        
+
         var xform = _xformQuery.GetComponent(uid);
         var stationUid = _stationSystem.GetStationInMap(xform.MapID);
-        
+
         component.PlayedShrinkMusic = true;
-        
+
         _sound.DispatchStationEventMusic(stationUid ?? uid, selectedMusic, StationEventMusicType.Nuke);
     }
 
@@ -243,20 +243,20 @@ public sealed class DynamicRangeSystem : EntitySystem
     private void OnDynamicRangeStartup(EntityUid uid, DynamicRangeComponent component, ComponentStartup args)
     {
         component.Processed = false;
-        
+
         RemoveBoundaryEntity(uid);
     }
 
     private void OnDynamicRangeChanged(EntityUid uid, DynamicRangeComponent component, AfterAutoHandleStateEvent args)
     {
         UpdateVisualization(uid, component);
-        
+
         RemoveBoundaryEntity(uid);
     }
 
     private void RemoveBoundaryEntity(EntityUid uid)
     {
-        if (_restrictedRangeQuery.TryComp(uid, out var restrictedRange) && 
+        if (_restrictedRangeQuery.TryComp(uid, out var restrictedRange) &&
             EntityManager.EntityExists(restrictedRange.BoundaryEntity))
         {
             EntityManager.DeleteEntity(restrictedRange.BoundaryEntity);
@@ -308,7 +308,7 @@ public sealed class DynamicRangeSystem : EntitySystem
         {
             component.ShrinkStartTime = _timing.CurTime;
             component.InitialRange = component.Range;
-            
+
             if (resetMusic)
                 component.PlayedShrinkMusic = false;
         }
@@ -363,12 +363,12 @@ public sealed class DynamicRangeSystem : EntitySystem
         }
 
         var restricted = EnsureComp<RestrictedRangeComponent>(uid);
-        
+
         restricted.Range = component.Range;
         restricted.Origin = component.Origin;
-        
+
         RemoveBoundaryEntity(uid);
-        
+
         Dirty(uid, restricted);
     }
 }
