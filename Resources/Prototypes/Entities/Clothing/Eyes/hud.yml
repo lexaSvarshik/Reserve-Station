@@ -215,6 +215,12 @@
   - type: ShowSyndicateIcons
   - type: ShowJobIcons # Goob
   - type: ShowMindShieldIcons # Goob
+  #reserve Syndie visor buff start
+  - type: EyeProtection
+  - type: FlashImmunity
+  - type: IdentityBlocker
+    coverage: EYES
+  #reserve Syndie visor buff end
 
 - type: entity
   parent: [ClothingEyesBase, BaseSyndicateContraband] # Goob edit
@@ -230,6 +236,16 @@
   - type: ShowHealthBars
   - type: ShowJobIcons # Goob
   - type: ShowMindShieldIcons # Goob
+    damageContainers:
+    - Biological
+  #reserve Syndie visor buff start
+    - Silicon #IPC
+  - type: EyeProtection
+  - type: FlashImmunity
+  - type: IdentityBlocker
+    coverage: EYES
+  - type: SolutionScanner #because nukie medic should make chems
+  #reserve Syndie visor buff end
 
 - type: entity
   parent: [ClothingEyesGlassesSunglasses, ShowSecurityIcons]
