@@ -281,11 +281,12 @@
         Piercing: 0.35
         Heat: 0.35
         Caustic: 0.5
+        Radiation: 0.85 #Reserve raid suit rework
   - type: ExplosionResistance
     damageCoefficient: 0.35
   - type: ClothingSpeedModifier
-    walkModifier: 0.9
-    sprintModifier: 0.9
+    walkModifier: 1 #Reserve raid suit rework
+    sprintModifier: 0.95 #Reserve raid suit rework
   #Shoulder mounted flashlight
   - type: ToggleableLightVisuals
     spriteLayer: light
@@ -337,6 +338,15 @@
     knockdownTimeDelta: -3
   - type: StaminaDamageResistance # Goobstation
     coefficient: 0.4
+  #Reserve raid suit rework begin
+  - type: TemperatureProtection
+    heatingCoefficient: 0.15
+    coolingCoefficient: 0.15
+  - type: FireProtection
+    reduction: 0.4
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.7
+  #Reserve raid suit rework end
 
 - type: entity
   parent: [ ClothingOuterBaseLarge, BaseMajorContraband, AllowSuitStorageClothing ]
