@@ -306,6 +306,7 @@
     - NewsReaderCartridge
     - WantedListCartridge
     - NanoChatCartridge # DeltaV
+    - CrimeAssistCartridge # Corvax-Next-CrimeAssist
 
 - type: entity
   parent: BasePDA
@@ -1028,6 +1029,7 @@
     - NotekeeperCartridge
     - NewsReaderCartridge
     - WantedListCartridge
+    - CrimeAssistCartridge # Corvax-Next-CrimeAssist
     - LogProbeCartridge
     - NanoChatCartridge # DeltaV
 
@@ -1447,6 +1449,7 @@
     - NotekeeperCartridge
     - NewsReaderCartridge
     - WantedListCartridge
+    - CrimeAssistCartridge # Corvax-Next-CrimeAssist
     - LogProbeCartridge
     - NanoChatCartridge # DeltaV
 
