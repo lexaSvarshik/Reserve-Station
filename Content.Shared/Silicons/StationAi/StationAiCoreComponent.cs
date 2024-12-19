@@ -62,4 +62,13 @@ public sealed partial class StationAiCoreComponent : Component
     public EntProtoId? PhysicalEntityProto = "StationAiHoloLocal";
 
     public const string Container = "station_ai_mind_slot";
+
+    //Reserve ai TTS begin
+
+    /// <summary>
+    /// Buffer for TTS words. Can be set negative.
+    /// </summary>
+    [DataField]
+    public int TtsBufferBetweenWordsMs = -50;
+    //Reserve ai TTS end
 }

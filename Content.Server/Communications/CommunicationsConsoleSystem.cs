@@ -315,7 +315,7 @@ namespace Content.Server.Communications
 			//Reserve - ai TTS begin
             List<string> announcementWords = new List<string>{};
 			if (canTTS)
-				announcementWords = AnnounceTTSSystem.PrepareTTSMessage((string)msg);
+				announcementWords = AnnounceTtsSystem.PrepareTtsMessage((string)msg);
 			msg += "\n" + Loc.GetString("comms-console-announcement-sent-by") + " " + author;
             //Reserve - ai TTS end
             if (comp.Global)
