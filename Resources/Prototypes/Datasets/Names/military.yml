@@ -7,63 +7,20 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-- type: dataset
-  id: NamesFirstMilitaryLeader
+- type: localizedDataset
+  id: NamesMilitaryFirstLeader
   values:
-  - Colonel
-  - Commander
-  - Lieutenant
-  - Major
+    prefix: names-military-leader-first-dataset-
+    count: 4
 
-- type: dataset
-  id: NamesFirstMilitary
+- type: localizedDataset
+  id: NamesMilitaryFirst
   values:
-  - Corporal
-  - Sergeant
-  - Specialist
+    prefix: names-military-first-dataset-
+    count: 3
 
-- type: dataset
-  id: NamesLastMilitary
+- type: localizedDataset
+  id: NamesMilitaryLast
   values:
-  - Agena
-  - Andromeda
-  - Antares
-  - Aquarius
-  - Beid
-  - Betelgeuse
-  - Canopus
-  - Capricorn
-  - Celaeno
-  - Centaur
-  - Chameleon
-  - Chau
-  - Cygnus
-  - Deneb
-  - Dragon
-  - Electra
-  - Fomalhaut
-  - Ginan
-  - Hercules
-  - Labr
-  - Leonis
-  - Matar
-  - Microscopium
-  - Nihal
-  - Ophiuchus
-  - Oculus
-  - Orion
-  - Perseus
-  - Phoenix
-  - Procyon
-  - Regulus
-  - Rigel
-  - Sargas
-  - Schedar
-  - Shaula
-  - Sirius
-  - Tabit
-  - Taurus
-  - Ukdah
-  - Vega
-  - Yildun
-  - Zosma
+    prefix: names-military-last-dataset-
+    count: 42
