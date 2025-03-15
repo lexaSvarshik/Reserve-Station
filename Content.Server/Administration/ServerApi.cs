@@ -38,6 +38,11 @@ using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using Content.Server.Administration.Managers;
+using Content.Shared.Chat;
+using Content.Server.Chat.Managers;
+using Content.Shared.Administration;
+using Content.Server.Players.PlayTimeTracking;
 
 namespace Content.Server.Administration;
 
@@ -772,6 +777,102 @@ public sealed partial class ServerApi : IPostInjectInit
     private sealed class GameruleResponse
     {
         public required List<string> GameRules { get; init; }
+    }
+
+    #endregion
+
+    #region ADT-Tweak
+
+    private async Task ActionAdminChat(IStatusHandlerContext context, Actor actor)
+    {
+        var body = await ReadJson<AdminChatActionBody>(context);
+        if (body == null)
+            return;
+
+        string discordName = $"{body.NickName}(Discord)";
+        string message = body.Message;
+        var authorUser = new NetUserId(actor.Guid);
+
+        await RunOnMainThread(async () =>
+        {
+            var clients = _admin.ActiveAdmins
+            .Where(admin => _adminManager.GetAdminData(admin)?.Flags.HasFlag(AdminFlags.Adminchat) == true)
+            .Select(p => p.Channel).ToList();
+
+            // Используем Loc.GetString для формирования сообщения
+            var wrappedMessage = Loc.GetString("chat-manager-send-admin-chat-wrap-message",
+                ("adminChannelName", Loc.GetString("chat-manager-admin-channel-name")),
+                ("playerName", discordName),
+                ("message", FormattedMessage.EscapeText(body.Message))
+            );
+
+            // Отправляем сообщения всем администраторам
+            foreach (var client in clients)
+            {
+                bool isSource = true;
+                string? audioPath = isSource ? _netConfigManager.GetClientCVar(client, CCVars.AdminChatSoundPath) : default;
+                float audioVolume = isSource ? _netConfigManager.GetClientCVar(client, CCVars.AdminChatSoundVolume) : default;
+
+                _chatManager.ChatMessageToOne(
+                    ChatChannel.AdminChat,
+                    message,
+                    wrappedMessage,
+                    default,
+                    false,
+                    client,
+                    audioPath: audioPath,
+                    audioVolume: audioVolume,
+                    author: authorUser
+                );
+            }
+
+            await RespondOk(context);
+            _sawmill.Info($"Send message by {FormatLogActor(actor)}");
+        });
+    }
+
+    private async Task ActionPlayAddTimeJob(IStatusHandlerContext context, Actor actor)
+    {
+        var body = await ReadJson<AdminActionPlayTimeJobBody>(context);
+        if (body == null)
+            return;
+
+        NetUserId userId;
+        if (Guid.TryParse(body.NickName, out var guid))
+        {
+            userId = new NetUserId(guid);
+        }
+        else
+        {
+            var dbGuid = await _playerLocator.LookupIdByNameAsync(body.NickName);
+            if (dbGuid == null)
+            {
+                return;
+            }
+            userId = dbGuid.UserId;
+        }
+
+        if (!int.TryParse(body.Time, out var minutes))
+        {
+            return;
+        }
+
+        await _playTimeTracking.AddTimeToTrackerById(userId, body.JobIdPrototype, TimeSpan.FromMinutes(minutes));
+
+        _sawmill.Info($"{actor.Name} using playtime_addrole {body.NickName} {body.JobIdPrototype} {body.Time}");
+    }
+
+    private sealed class AdminChatActionBody
+    {
+        public required string Message { get; init; }
+        public required string NickName { get; init; }
+    }
+
+    private sealed class AdminActionPlayTimeJobBody
+    {
+        public required string NickName { get; init; }
+        public required string JobIdPrototype { get; init; }
+        public required string Time { get; init; }
     }
 
     #endregion
