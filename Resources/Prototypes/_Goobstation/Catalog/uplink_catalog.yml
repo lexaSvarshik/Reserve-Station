@@ -923,7 +923,6 @@
   categories:
   - UplinkExplosives
 
-# Misc
 - type: listing
   id: UplinkDimensionPot
   name: uplink-dimension-pot-name
