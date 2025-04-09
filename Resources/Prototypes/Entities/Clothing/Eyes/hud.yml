@@ -239,7 +239,13 @@
   - type: ShowHealthBars
     damageContainers:
     - Biological
-    - Silicon #IPC
+    - Silicon #IPC and borgs
+    - Inorganic
+  - type: ShowHealthIcons
+    damageContainers:
+    - Biological
+    - Silicon
+    - Inorganic
   - type: EyeProtection
   - type: FlashImmunity
   - type: IdentityBlocker
