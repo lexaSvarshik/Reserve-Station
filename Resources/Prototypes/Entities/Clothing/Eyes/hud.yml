@@ -233,12 +233,12 @@
   - type: Clothing
     sprite: Clothing/Eyes/Hud/syndagent.rsi
   - type: ShowSyndicateIcons
-  - type: ShowHealthBars
   - type: ShowJobIcons # Goob
   - type: ShowMindShieldIcons # Goob
+  #reserve Syndie visor buff start
+  - type: ShowHealthBars
     damageContainers:
     - Biological
-  #reserve Syndie visor buff start
     - Silicon #IPC
   - type: EyeProtection
   - type: FlashImmunity
