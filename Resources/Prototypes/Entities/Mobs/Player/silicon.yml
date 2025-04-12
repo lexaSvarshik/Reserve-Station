@@ -136,6 +136,7 @@
     - ActionJumpToCore
     - ActionSurvCameraLights
     - ActionAIViewLaws
+    - ActionAIToggleBolts # WD edit
   - type: UserInterface
     interfaces:
       enum.RadarConsoleUiKey.Key:
