@@ -28,6 +28,7 @@ jobs:
   build:
     runs-on: ubuntu-latest #Reserve edit. No self-hosted sadly
 
+
     steps:
     - name: Install dependencies
       run: sudo apt-get install -y python3-paramiko python3-lxml
