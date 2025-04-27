@@ -266,20 +266,20 @@
   components:
   - type: Sprite
     # sprite: Clothing/OuterClothing/Armor/syndie-raid.rsi
-    sprite: SS220/Clothing/OuterClothing/Armor/syndie-raid.rsi #ss220 raid suit resprite
+    sprite: _Reserve/Clothing/OuterClothing/Armor/syndie-raid.rsi #Reserve raid suit resprite
     layers:
     - state: icon
-    #ss220 raid suit resprite begin
+    #Reserve raid suit resprite begin
     - state: icon-flash
       visible: false
       map: [ "light" ]
-    #ss220 raid suit resprite end
+    #Reserve raid suit resprite end
     - state: light-overlay
       visible: false
       shader: unshaded
   - type: Clothing
-    # sprite: Clothing/OuterClothing/Armor/syndie-raid.rsi #ss220 raid suit resprite
-    sprite: SS220/Clothing/OuterClothing/Armor/syndie-raid.rsi #ss220 raid suit resprite
+    # sprite: Clothing/OuterClothing/Armor/syndie-raid.rsi #Reserve raid suit resprite
+    sprite: _Reserve/Clothing/OuterClothing/Armor/syndie-raid.rsi #Reserve raid suit resprite
   - type: Armor
     modifiers:
       coefficients:

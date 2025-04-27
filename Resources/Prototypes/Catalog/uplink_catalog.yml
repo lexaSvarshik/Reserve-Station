@@ -1686,19 +1686,19 @@
   name: uplink-syndie-raid-name
   description: uplink-syndie-raid-desc
   # icon: { sprite: /Textures/Clothing/OuterClothing/Armor/syndie-raid.rsi, state: icon }
-  icon: { sprite: /Textures/SS220/Clothing/OuterClothing/Armor/syndie-raid.rsi, state: icon } #ss220 raid suit resprite
+  icon: { sprite: /Textures/_Reserve/Clothing/OuterClothing/Armor/syndie-raid.rsi, state: icon } #Reserve raid suit resprite
   productEntity: ClothingBackpackDuffelSyndicateRaidBundle
   cost:
     Telecrystal: 50 # goob
   categories:
   - UplinkWearables
-#ss220 raid suit rework begin
+#Reserve raid suit rework begin
 #  conditions:
 #  - !type:StoreWhitelistCondition
 #    whitelist:
 #      tags:
 #      - NukeOpsUplink
-#ss220 raid suit rework end
+#Reserve raid suit rework end
 
 
 - type: listing
