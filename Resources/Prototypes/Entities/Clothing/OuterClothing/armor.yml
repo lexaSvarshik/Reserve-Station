@@ -352,7 +352,7 @@
   - type: FireProtection
     reduction: 0.4
   - type: ClothingSlowOnDamageModifier
-    modifier: 0.7
+    modifier: 0.5
   #Reserve raid suit rework end
 
 - type: entity
