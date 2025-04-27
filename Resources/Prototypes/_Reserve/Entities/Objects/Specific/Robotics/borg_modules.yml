@@ -11,6 +11,7 @@
         - state: icon-fireaxe
           sprite: _Reserve/Objects/Specific/Robotics/borgmodule.rsi
     - type: ItemBorgModule
+      moduleId: FireAxe
       items:
         - BorgFireAxe
     - type: BorgModuleIcon
@@ -28,20 +29,8 @@
       - state: icon-fireaxe-flaming
         sprite: _Reserve/Objects/Specific/Robotics/borgmodule.rsi
     - type: ItemBorgModule
+      moduleId: FlamingAxe
       items:
         - BorgFireAxeFlaming
     - type: BorgModuleIcon
       icon: { sprite: _Reserve/Interface/Actions/actions_borg.rsi, state: syndicate-fireaxe-module }
-    - type: HiddenDescription
-      entries:
-      - label: hidden-desc-flaming-axe-module-syndicate
-        whitelistMind:
-          components:
-            - TraitorRole
-            - NukeOperative
-      - label: hidden-desc-flaming-axe-module-research
-        jobRequired:
-          - ResearchAssistant
-          - ResearchDirector
-          - Scientist
-          - Borg
