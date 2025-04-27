@@ -1,16 +1,4 @@
 - type: entity
-  parent: ToyRubberDuck
-  id: ToyRubberDuckAlt
-  components:
-  - type: Sprite
-    sprite: SS220/Objects/Fun/ducky_alt.rsi
-    state: icon
-  - type: Clothing
-    sprite: SS220/Objects/Fun/ducky_alt.rsi
-    slots:
-    - HEAD
-
-- type: entity
   parent: ToySword
   id: DoubleToySword
   name: double toy sword
@@ -18,7 +6,9 @@
   components:
     - type: EnergySword
     - type: ItemToggle
+      predictable: false # Goobstation - wielded weapons sound prediction is broken
       onUse: false # wielding events control it instead
+      onActivate: false # prevents the weapon from being able to be turned on when it is on the ground
       soundActivate:
         path: /Audio/Weapons/ebladeon.ogg
         params:
@@ -49,6 +39,7 @@
     - type: Wieldable
       wieldSound: null # esword light sound instead
     - type: MeleeWeapon
+      heavyStaminaCost: 0 # goob edit
       wideAnimationRotation: -135
       attackRate: 1.5
       angle: 100
@@ -64,6 +55,7 @@
     - type: Item
       sprite: Objects/Weapons/Melee/e_sword_double-inhands.rsi
     - type: Appearance
+    - type: FlipOnHit # WD EDIT
     - type: ToggleableLightVisuals
       spriteLayer: blade
       inhandVisuals:
