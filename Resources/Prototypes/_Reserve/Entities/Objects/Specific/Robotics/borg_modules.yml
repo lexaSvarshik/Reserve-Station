@@ -19,7 +19,7 @@
 
 - type: entity
   id: BorgModuleFlamingAxe
-  parent: [ BaseBorgModule, BaseProviderBorgModule ]
+  parent: [ BaseBorgModule, BaseProviderBorgModule, BaseSyndicateContraband ]
   name: fire axe cyborg module
   description: A piece of tech that gives cyborgs a fire axe!
   components:
