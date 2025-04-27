@@ -22,7 +22,7 @@
         # axes are kinda like sharp hammers, you know?
         Blunt: 5
         Slash: 10
-        Structural: 90 #ss220
+        Structural: 90 #Reserve
     soundHit:
       collection: MetalThud
   - type: Item
@@ -30,7 +30,7 @@
   - type: Tool
     qualities:
       - Prying
-      - PlatingCutting #SS220-tools-tile-prying-fix
+      - PlatingCutting #Reserve
   - type: ToolTileCompatible
   - type: Prying
   - type: UseDelay

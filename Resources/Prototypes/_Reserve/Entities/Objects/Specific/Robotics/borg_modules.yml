@@ -1,19 +1,3 @@
-# VladIsLove for SS220
-- type: entity
-  id: BorgModuleProtoKineticAccelerator
-  parent: [ BaseBorgModuleCargo, BaseProviderBorgModule ]
-  name: protokinetic cyborg module
-  components:
-  - type: Sprite
-    layers:
-    - state: cargo
-    - state: icon-ProtoKinetic-gun
-  - type: ItemBorgModule
-    items:
-    - WeaponProtoKineticAccelerator
-    - JetpackBorgModule
-    - HandheldGPSBasic
-
 #Svarshik's cyborg fireaxes
 - type: entity
   id: BorgModuleFireAxe
@@ -25,12 +9,12 @@
       layers:
         - state: engineering
         - state: icon-fireaxe
-          sprite: SS220/Objects/Specific/Robotics/borgmodule.rsi
+          sprite: _Reserve/Objects/Specific/Robotics/borgmodule.rsi
     - type: ItemBorgModule
       items:
         - BorgFireAxe
     - type: BorgModuleIcon
-      icon: { sprite: SS220/Interface/Actions/actions_borg.rsi, state: fireaxe-module }
+      icon: { sprite: _Reserve/Interface/Actions/actions_borg.rsi, state: fireaxe-module }
 
 - type: entity
   id: BorgModuleFlamingAxe
@@ -42,12 +26,12 @@
       layers:
       - state: syndicate
       - state: icon-fireaxe-flaming
-        sprite: SS220/Objects/Specific/Robotics/borgmodule.rsi
+        sprite: _Reserve/Objects/Specific/Robotics/borgmodule.rsi
     - type: ItemBorgModule
       items:
         - BorgFireAxeFlaming
     - type: BorgModuleIcon
-      icon: { sprite: SS220/Interface/Actions/actions_borg.rsi, state: syndicate-fireaxe-module }
+      icon: { sprite: _Reserve/Interface/Actions/actions_borg.rsi, state: syndicate-fireaxe-module }
     - type: HiddenDescription
       entries:
       - label: hidden-desc-flaming-axe-module-syndicate
