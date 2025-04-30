@@ -9,7 +9,7 @@ using Robust.Shared.EntitySerialization;
 using Robust.Shared.EntitySerialization.Systems;
 using Robust.Shared.Utility;
 
-namespace Content.Goobstation.Server.Ghostbar;
+namespace Content.Server._Goobstation.Ghostbar; //Reserve battleroyale port
 
 public sealed class AntagBaseSystem : EntitySystem
 {

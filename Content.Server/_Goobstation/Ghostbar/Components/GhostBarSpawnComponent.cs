@@ -7,13 +7,13 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-namespace Content.Goobstation.Server.Ghostbar.Components;
+namespace Content.Server._Goobstation.Ghostbar.Components; //Reserve battleroyale port
 
 /// <summary>
-/// Tracker for ghostbar players
+/// Target for ghosts to spawn at
 /// </summary>
 [RegisterComponent]
-public sealed partial class GhostBarPlayerComponent : Component
+public sealed partial class GhostBarSpawnComponent : Component
 {
 
 }

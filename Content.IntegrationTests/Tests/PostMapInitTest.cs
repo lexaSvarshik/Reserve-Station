@@ -221,8 +221,8 @@ namespace Content.IntegrationTests.Tests
             "Gate", // Goobstation - goob changes
             "Lavatest", // Lavaland Change
             "Loop",
-            "Delta" // Goobstation - add Delta
-			"BattleRoyale", // BattleRoyale Change
+            "Delta", // Goobstation - add Delta
+			"BattleRoyale" // BattleRoyale Change
         };
 
         /// <summary>

@@ -8,15 +8,15 @@ using Content.Server.GameTicking.Events;
 using Content.Server.GameTicking.Rules;
 using Content.Server.KillTracking;
 using Content.Server.Mind;
-using Content.Server.Traits.Assorted;
-using Content.Server._CorvaxNext.Traits.Assorted;
+//using Content.Server.Traits.Assorted; //Reserve port BattleRoyale
+//using Content.Server._CorvaxNext.Traits.Assorted; //Reserve port BattleRoyale
 using Content.Server.Points;
 using Content.Server.RoundEnd;
 using Content.Server.Shuttles.Components;
 using Content.Server.Shuttles.Systems;
 using Content.Server.Station.Systems;
 using Content.Server._CorvaxNext.BattleRoyale.Rules.Components;
-using Content.Server._CorvaxNext.Ghostbar.Components;
+using Content.Server._Goobstation.Ghostbar.Components; //Reserve port BattleRoyale
 using Robust.Shared.Audio;
 using Content.Shared.Bed.Sleep;
 using Content.Shared.CombatMode.Pacification;
@@ -32,7 +32,8 @@ using Content.Shared.Mobs.Systems;
 using Content.Shared.Players;
 using Content.Shared.Points;
 using Content.Shared.Traits.Assorted;
-using Content.Shared._CorvaxNext.Skills;
+using Content.Server.Traits.Assorted; //Reserve port BattleRoyale
+//using Content.Shared._CorvaxNext.Skills; //Reserve port BattleRoyale
 using Robust.Server.GameObjects;
 using Robust.Server.Player;
 using Robust.Shared.Network;
@@ -63,7 +64,7 @@ namespace Content.Server._CorvaxNext.BattleRoyale.Rules
         [Dependency] private readonly ChatSystem _chatSystem = default!;
         [Dependency] private readonly IGameTiming _timing = default!;
         [Dependency] private readonly IRobustRandom _random = default!;
-        [Dependency] private readonly SharedSkillsSystem _skills = default!;
+        //[Dependency] private readonly SharedSkillsSystem _skills = default!; //Reserve port BattleRoyale
         [Dependency] private readonly ArrivalsSystem _arrivals = default!;
 
         private const int MaxNormalCallouts = 60;
@@ -108,22 +109,22 @@ namespace Content.Server._CorvaxNext.BattleRoyale.Rules
         protected override void Started(EntityUid uid, BattleRoyaleRuleComponent component, GameRuleComponent gameRule, GameRuleStartedEvent args)
         {
             base.Started(uid, component, gameRule, args);
-            
-            Timer.Spawn(TimeSpan.FromSeconds(5), () => 
+
+            Timer.Spawn(TimeSpan.FromSeconds(5), () =>
             {
                 CheckLastManStanding(uid, component);
             });
-            
-            Timer.Spawn(TimeSpan.FromMinutes(2), () => 
+
+            Timer.Spawn(TimeSpan.FromMinutes(2), () =>
             {
                 if (!GameTicker.IsGameRuleActive(uid, gameRule))
                     return;
-                
+
                 var message = Loc.GetString("battle-royale-kill-or-be-killed");
                 var title = Loc.GetString("battle-royale-title");
-            
+
                 var sound = new SoundPathSpecifier("/Audio/Ambience/Antag/traitor_start.ogg");
-            
+
                 _chatSystem.DispatchGlobalAnnouncement(message, title, true, sound, Color.Red);
             });
         }
@@ -142,16 +143,16 @@ namespace Content.Server._CorvaxNext.BattleRoyale.Rules
                 var mobMaybe = _stationSpawning.SpawnPlayerCharacterOnStation(ev.Station, null, ev.Profile);
                 DebugTools.AssertNotNull(mobMaybe);
                 var mob = mobMaybe!.Value;
-				
+
 				if (HasComp<PainNumbnessComponent>(mob))
 					RemComp<PainNumbnessComponent>(mob);
-				
-				if (HasComp<MoodModifyTraitComponent>(mob))
-					RemComp<MoodModifyTraitComponent>(mob);
-				
+
+				//if (HasComp<MoodModifyTraitComponent>(mob)) //Reserve port BattleRoyale
+				//	RemComp<MoodModifyTraitComponent>(mob); //Reserve port BattleRoyale
+
 				if (HasComp<PermanentBlindnessComponent>(mob))
 					RemComp<PermanentBlindnessComponent>(mob);
-				
+
 				if (HasComp<NarcolepsyComponent>(mob))
 					RemComp<NarcolepsyComponent>(mob);
 
@@ -159,30 +160,30 @@ namespace Content.Server._CorvaxNext.BattleRoyale.Rules
                 SetOutfitCommand.SetOutfit(mob, br.Gear, EntityManager);
                 EnsureComp<KillTrackerComponent>(mob);
                 EnsureComp<SleepingComponent>(mob);
-				
-                _skills.GrantAllSkills(mob);
-				
+
+                // _skills.GrantAllSkills(mob); //Reserve port BattleRoyale
+
                 var pacifiedComp = EnsureComp<PacifiedComponent>(mob);
-                Timer.Spawn(TimeSpan.FromMinutes(2), () => 
+                Timer.Spawn(TimeSpan.FromMinutes(2), () =>
                 {
                     if (!Deleted(mob) && HasComp<PacifiedComponent>(mob))
 				        RemComp<PacifiedComponent>(mob);
                 });
-				
+
                 var blurryVisionComp = EnsureComp<BlurryVisionComponent>(mob);
-                Timer.Spawn(TimeSpan.FromSeconds(15), () => 
+                Timer.Spawn(TimeSpan.FromSeconds(15), () =>
                 {
                     if (!Deleted(mob) && HasComp<BlurryVisionComponent>(mob))
 				        RemComp<BlurryVisionComponent>(mob);
                 });
 
                 ev.Handled = true;
-				
-                Timer.Spawn(TimeSpan.FromSeconds(0.5), () => 
+
+                Timer.Spawn(TimeSpan.FromSeconds(0.5), () =>
                 {
                     CheckLastManStanding(uid, br);
                 });
-				
+
                 break;
             }
         }
