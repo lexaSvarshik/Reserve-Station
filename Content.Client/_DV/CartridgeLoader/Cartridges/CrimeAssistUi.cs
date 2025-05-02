@@ -1,10 +1,10 @@
 using Robust.Client.UserInterface;
 using Content.Client.UserInterface.Fragments;
-using Content.Shared._CorvaxNext.CartridgeLoader.Cartridges;
+using Content.Shared._DV.CartridgeLoader.Cartridges;
 using Content.Shared.CartridgeLoader;
 using Robust.Shared.Prototypes;
 
-namespace Content.Client._CorvaxNext.CartridgeLoader.Cartridges;
+namespace Content.Client._DV.CartridgeLoader.Cartridges;
 
 public sealed partial class CrimeAssistUi : UIFragment
 {

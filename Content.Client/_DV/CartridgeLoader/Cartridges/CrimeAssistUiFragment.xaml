@@ -1,5 +1,5 @@
-<cartridges:CrimeAssistUiFragment xmlns:cartridges="clr-namespace:Content.Client._CorvaxNext.CartridgeLoader.Cartridges"
-                                  xmlns="https://spacestation14.io" 
+<cartridges:CrimeAssistUiFragment xmlns:cartridges="clr-namespace:Content.Client._DV.CartridgeLoader.Cartridges"
+                                  xmlns="https://spacestation14.io"
                                   Margin="1 0 2 0">
 
     <!-- Main background container -->

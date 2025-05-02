@@ -1,9 +1,9 @@
 using Content.Shared.CartridgeLoader;
-using Content.Server._CorvaxNext.CartridgeLoader;
+using Content.Server._DV.CartridgeLoader;
 using Content.Server.CartridgeLoader.Cartridges;
 using Content.Server.CartridgeLoader;
 
-namespace Content.Server._CorvaxNext.CartridgeLoader.Cartridges;
+namespace Content.Server._DV.CartridgeLoader.Cartridges;
 
 public sealed class CrimeAssistCartridgeSystem : EntitySystem
 {

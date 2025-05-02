@@ -1,6 +1,6 @@
 using Robust.Shared.Prototypes;
 
-namespace Content.Shared._CorvaxNext.CartridgeLoader.Cartridges;
+namespace Content.Shared._DV.CartridgeLoader.Cartridges;
 
 [Prototype("crimeAssistPage")]
 public sealed partial class CrimeAssistPage : IPrototype
