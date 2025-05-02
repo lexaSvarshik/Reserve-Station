@@ -395,7 +395,7 @@
     preinstalled:
       - CrewManifestCartridge
       - NotekeeperCartridge
-      - NewsReadCartridge
+      # - NewsReadCartridge #Reserve edit
       - CrimeAssistCartridge
 
 - type: entity
@@ -767,7 +767,7 @@
     preinstalled:
       - CrewManifestCartridge
       - NotekeeperCartridge
-      - NewsReadCartridge
+      # - NewsReadCartridge #Reserve edit
       - CrimeAssistCartridge
 
 - type: entity
@@ -1066,7 +1066,7 @@
     preinstalled:
       - CrewManifestCartridge
       - NotekeeperCartridge
-      - NewsReadCartridge
+      # - NewsReadCartridge #Reserve edit
       - CrimeAssistCartridge
 
 - type: entity
@@ -1090,7 +1090,7 @@
     preinstalled:
       - CrewManifestCartridge
       - NotekeeperCartridge
-      - NewsReadCartridge
+      # - NewsReadCartridge #Reserve edit
       - CrimeAssistCartridge
 
 - type: entity
@@ -1612,7 +1612,7 @@
     preinstalled:
       - CrewManifestCartridge
       - NotekeeperCartridge
-      - NewsReadCartridge
+      # - NewsReadCartridge #Reserve edit
       - CrimeAssistCartridge
 
 - type: entity

@@ -20,7 +20,7 @@
     preinstalled:
       - CrewManifestCartridge
       - NotekeeperCartridge
-      - NewsReadCartridge
+      # - NewsReadCartridge #Reserve edit
       - CrimeAssistCartridge
   - type: Pda
     id: BrigmedicIDCard
