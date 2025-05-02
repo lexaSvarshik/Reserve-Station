@@ -624,17 +624,6 @@
   - UplinkAmmo
 
 - type: listing
-  id: UplinkMagazinePistolSubMachineGunRubber
-  name: uplink-pistol-magazine-c20r-rubber-name
-  description: uplink-pistol-magazine-c20r-rubber-desc
-  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/smg_mag.rsi, state: rubber }
-  productEntity: MagazinePistolSubMachineGunRubber
-  cost:
-    Telecrystal: 10
-  categories:
-  - UplinkAmmo
-
-- type: listing
   id: UplinkMagazinePistolSubMachineGunIncendiary
   name: uplink-pistol-magazine-c20r-incendiary-name
   description: uplink-pistol-magazine-c20r-incendiary-desc
@@ -669,17 +658,6 @@
   - UplinkAmmo
 
 - type: listing
-  id: UplinkMagazinePistolCaselessRifleRubber
-  name: uplink-pistol-magazine-caseless-rubber-name
-  description: uplink-pistol-magazine-caseless-rubber-desc
-  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/caseless_pistol_mag.rsi, state: rubber }
-  productEntity: MagazinePistolCaselessRifleRubber
-  cost:
-    Telecrystal: 5
-  categories:
-  - UplinkAmmo
-
-- type: listing
   id: UplinkMagazinePistolCaselessRifleIncendiary
   name: uplink-pistol-magazine-caseless-incendiary-name
   description: uplink-pistol-magazine-caseless-incendiary-desc
@@ -707,17 +685,6 @@
   description: uplink-magazine-caseless-desc
   icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/caseless_rifle_mag.rsi, state: red }
   productEntity: MagazineCaselessRifle
-  cost:
-    Telecrystal: 10
-  categories:
-  - UplinkAmmo
-
-- type: listing
-  id: UplinkMagazineCaselessRifleRubber
-  name: uplink-magazine-caseless-rubber-name
-  description: uplink-magazine-caseless-rubber-desc
-  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/caseless_rifle_mag.rsi, state: rubber }
-  productEntity: MagazineCaselessRifleRubber
   cost:
     Telecrystal: 10
   categories:
@@ -812,25 +779,6 @@
   name: uplink-ammo-bundle-name
   description: uplink-ammo-bundle-desc
   productEntity: ClothingBackpackDuffelSyndicateAmmoFilled
-  cost:
-    Telecrystal: 75
-  categories:
-  - UplinkAmmo
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - NukeOpsUplink
-    - !type:BuyerWhitelistCondition
-      blacklist:
-        components:
-          - SurplusBundle
-
-- type: listing
-  id: UplinkAmmoBundleRubber
-  name: uplink-ammo-bundle-rubber-name
-  description: uplink-ammo-bundle-rubber-desc
-  productEntity: ClothingBackpackDuffelSyndicateAmmoFilledRubber
   cost:
     Telecrystal: 75
   categories:
