@@ -204,9 +204,6 @@ uplink-pistol-magazine-c20r-incendiary-desc = WAKE THE FUCK UP SAMURAI, WE GOT A
 uplink-pistol-magazine-c20r-shrapnel-name = SMG magazine (.35 auto, shrapnel)
 uplink-pistol-magazine-c20r-shrapnel-desc = A premium magazine with 30 cartridges for firing clouds of bullets at the crew.
 
-uplink-pistol-magazine-caseless-name = Pistol Magazine (.25 caseless)
-uplink-pistol-magazine-caseless-desc = Pistol magazine with 10 catridges. Compatible with the Cobra.
-
 uplink-pistol-magazine-caseless-rubber-name = Pistol Magazine (.25 caseless, rubber)
 uplink-pistol-magazine-caseless-rubber-desc = Pistol magazine with 10 catridges. For when you need to (quietly) take someone alive.
 

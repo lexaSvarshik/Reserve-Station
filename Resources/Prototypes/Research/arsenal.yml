@@ -243,25 +243,6 @@
   # Goobstation R&D Console rework end
 
 - type: technology
-  id: ExplosiveTechnology
-  name: research-technology-explosive-technology
-  icon:
-    sprite: Objects/Devices/payload.rsi
-    state: payload-explosive-armed
-  discipline: Arsenal
-  tier: 2
-  cost: 10000
-  recipeUnlocks:
-  - SignallerAdvanced
-  - SignalTrigger
-  - VoiceTrigger
-  - TimerTrigger
-  - FlashPayload
-  - ExplosivePayload
-  - ChemicalPayload
-  # TODO: Add "Explosive Ammunition" to this tech to make it waaaay more interesting.
-
-- type: technology
   id: ShrapnelMunitions
   name: research-technology-shrapnel-munitions
   icon:
@@ -282,6 +263,11 @@
   - MagazineBoxLightRifleShrapnel
   - MagazineBoxRifleShrapnel
   - MagazineBoxCaselessRifleShrapnel
+  # Goobstation R&D Console rework start
+  position: 4,1
+  technologyPrerequisites:
+  - UraniumMunitions
+  # Goobstation R&D Console rework end
 
 
 - type: technology

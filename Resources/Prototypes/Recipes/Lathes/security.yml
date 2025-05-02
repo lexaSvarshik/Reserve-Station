@@ -255,28 +255,6 @@
   id: TargetSyndicate
   result: TargetSyndicate
 
-- type: latheRecipe
-  parent: BaseAmmoRecipe
-  id: MagazinePistolCaselessRifle
-  result: MagazinePistolCaselessRifle
-  materials:
-    Steel: 145
-
-# .25 Caseless (Civilian) Rifle Magazines
-- type: latheRecipe
-  parent: BaseAmmoRecipe
-  id: MagazineCaselessRifleShortPractice
-  result: MagazineCaselessRifleShortPractice
-  materials:
-    Steel: 150
-
-- type: latheRecipe
-  parent: BaseAmmoRecipe
-  id: MagazineCaselessRifleShort
-  result: MagazineCaselessRifleShort
-  materials:
-    Steel: 250
-
 # .25 Caseless (Military) Rifle Magazines
 - type: latheRecipe
   parent: BaseAmmoRecipe
@@ -284,13 +262,6 @@
   result: MagazineCaselessRiflePractice
   materials:
     Steel: 250
-
-- type: latheRecipe
-  parent: BaseAmmoRecipe
-  id: MagazineCaselessRifle
-  result: MagazineCaselessRifle
-  materials:
-    Steel: 350
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
@@ -320,13 +291,6 @@
   result: MagazineBoxCaselessRiflePractice
   materials:
     Steel: 500
-
-- type: latheRecipe
-  parent: BaseAmmoRecipe
-  id: MagazineBoxCaselessRifle
-  result: MagazineBoxCaselessRifle
-  materials:
-    Steel: 720
 
 - type: latheRecipe
   parent: BaseAmmoRecipe
@@ -572,24 +536,6 @@
   completetime: 5
   materials:
     Steel: 565
-
-- type: latheRecipe
-  parent: BaseAmmoRecipe
-  id: MagazineMagnumEmpty
-  result: MagazineMagnumEmpty
-  category: Ammo
-  completetime: 5
-  materials:
-    Steel: 30
-
-- type: latheRecipe
-  parent: BaseAmmoRecipe
-  id: MagazineMagnum
-  result: MagazineMagnum
-  category: Ammo
-  completetime: 5
-  materials:
-    Steel: 150
 
 - type: latheRecipe
   parent: BaseAmmoRecipe

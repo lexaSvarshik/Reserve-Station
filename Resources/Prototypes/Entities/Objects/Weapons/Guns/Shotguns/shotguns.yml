@@ -187,8 +187,6 @@
     damage:
       types:
         Blunt: 2.5
-  - type: DamageOtherOnHit
-    staminaCost: 9.5
 
 - type: entity
   name: Bulldog
