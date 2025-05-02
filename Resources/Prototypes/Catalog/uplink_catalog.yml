@@ -356,17 +356,6 @@
   categories:
   - UplinkWeaponry
 
-- type: listing
-  id: UplinkFPA90Bundle
-  name: uplink-fpa-90-bundle-name
-  description: uplink-fpa-90-bundle-desc
-  icon: { sprite: /Textures/_EE/Objects/Weapons/Guns/SMGs/FPA90.rsi, state: icon }
-  productEntity: ClothingBackpackDuffelSyndicateFilledFPA90
-  cost:
-    Telecrystal: 50 # goob
-  categories:
-  - UplinkWeaponry
-
 # Explosives
 
 - type: listing
