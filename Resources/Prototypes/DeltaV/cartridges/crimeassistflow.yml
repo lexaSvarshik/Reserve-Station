@@ -92,7 +92,7 @@
   id: "questionDidSuspectBreakSomething"
   locKey: "crime-assist-question-didsuspectbreaksomething"
   onYes: "questionWereThereManySuspects"
-  onNo: "questionWasCrimeSexualInNature"
+  onNo: "questionWasSuspectANuisance" #Reserve edit
 
 # Vandalism questions
 - type: crimeAssistPage
@@ -119,7 +119,7 @@
   onYes: "resultGrandSabotage"
   onNo: "resultSabotage"
 
-# ERP
+# ERP # Not used
 - type: crimeAssistPage
   id: "questionWasCrimeSexualInNature"
   locKey: "crime-assist-question-wascrimesexualinnature"
