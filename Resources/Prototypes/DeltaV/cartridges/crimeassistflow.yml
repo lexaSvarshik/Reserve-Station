@@ -9,17 +9,19 @@
   onYes: "resultTerrorism"
   onNo: "questionWasSomeoneAttacked"
 
+# Attack
 - type: crimeAssistPage
   id: "questionWasSomeoneAttacked"
   locKey: "crime-assist-question-wassomeoneattacked"
-  onYes: "questionWasItSophont"
-  onNo: "questionForcedMindbreakerToxin"
+  onYes: "questionWasItSentient" #Reserve edit
+  onNo: "questionHadRestrictedItem" #Reserve edit
 
+# Attack questions
 - type: crimeAssistPage
-  id: "questionWasItSophont"
-  locKey: "crime-assist-question-wasitsophont"
+  id: "questionWasItSentient" #Reserve edit
+  locKey: "crime-assist-question-wasitsentient" #Reserve edit
   onYes: "questionDidVictimDie"
-  onNo: "resultAnimalCruelty"
+  onNo: "resultAnimalCruelty" #101
 
 - type: crimeAssistPage
   id: "questionDidVictimDie"
@@ -39,18 +41,14 @@
   onYes: "resultMurder"
   onNo: "resultManslaughter"
 
-- type: crimeAssistPage
-  id: "questionForcedMindbreakerToxin"
-  locKey: "crime-assist-question-forcedmindbreakertoxin"
-  onYes: "resultMindbreaking"
-  onNo: "questionHadRestrictedItem"
-
+# Robbery
 - type: crimeAssistPage
   id: "questionHadRestrictedItem"
   locKey: "crime-assist-question-hadillicititem"
   onYes: "questionWasItAPerson"
   onNo: "questionWasSuspectInARestrictedLocation"
 
+# Robbery questions
 - type: crimeAssistPage
   id: "questionWasItAPerson"
   locKey: "crime-assist-question-wasitaperson"
@@ -75,24 +73,28 @@
   onYes: "resultGrandTheft"
   onNo: "resultTheft"
 
+# Trespassing
 - type: crimeAssistPage
   id: "questionWasSuspectInARestrictedLocation"
   locKey: "crime-assist-question-wassuspectinarestrictedlocation"
   onYes: "questionWasEntranceLocked"
   onNo: "questionDidSuspectBreakSomething"
 
+# Trespassing questions
 - type: crimeAssistPage
   id: "questionWasEntranceLocked"
   locKey: "crime-assist-question-wasentrancelocked"
   onYes: "resultBreakingAndEntering"
   onNo: "resultTrespass"
 
+# Vandalism
 - type: crimeAssistPage
   id: "questionDidSuspectBreakSomething"
   locKey: "crime-assist-question-didsuspectbreaksomething"
   onYes: "questionWereThereManySuspects"
   onNo: "questionWasCrimeSexualInNature"
 
+# Vandalism questions
 - type: crimeAssistPage
   id: "questionWereThereManySuspects"
   locKey: "crime-assist-question-weretheremanysuspects"
@@ -117,28 +119,31 @@
   onYes: "resultGrandSabotage"
   onNo: "resultSabotage"
 
+# ERP
 - type: crimeAssistPage
   id: "questionWasCrimeSexualInNature"
   locKey: "crime-assist-question-wascrimesexualinnature"
   onYes: "resultSexualHarrassment"
   onNo: "questionWasSuspectANuisance"
 
+# Messing with sec
 - type: crimeAssistPage
   id: "questionWasSuspectANuisance"
   locKey: "crime-assist-question-wassuspectanuisance"
   onYes: "questionFalselyReportingToSecurity"
   onNo: "resultInnocent"
 
+# Messing with sec questions
 - type: crimeAssistPage
   id: "questionFalselyReportingToSecurity"
   locKey: "crime-assist-question-falselyreportingtosecurity"
-  onYes: "resultPerjuryOrFalseReport"
+  onYes: "resultPerjuryOrFalseReport" #212
   onNo: "questionHappenInCourt"
 
 - type: crimeAssistPage
   id: "questionHappenInCourt"
   locKey: "crime-assist-question-happenincourt"
-  onYes: "resultContemptOfCourt"
+  onYes: "resultContemptOfCourt" #211
   onNo: "questionDuringActiveInvestigation"
 
 - type: crimeAssistPage
@@ -159,6 +164,7 @@
   onYes: "resultAbuseOfPower"
   onNo: "resultHooliganism"
 
+# Results
 - type: crimeAssistPage
   id: "resultInnocent"
   locKeyTitle: "crime-assist-crime-innocent"
