@@ -259,7 +259,7 @@
   name: advanced industrial welding tool
   parent: WelderIndustrial
   id: WelderIndustrialAdvanced
-  description: "An advanced industrial welder with over five times the fuel capacity and a hotter flame."
+  description: "An advanced industrial welder with over five times the fuel capacity and a hotter flame." #Reserve Experimental Welder Rework
   components:
   - type: Sprite
     sprite: Objects/Tools/welder_industrialadv.rsi
@@ -270,16 +270,16 @@
       Welder:
         reagents:
         - ReagentId: WeldingFuel
-          Quantity: 500
-        maxVol: 500
+          Quantity: 500 #Reserve Experimental Welder Rework
+        maxVol: 500 #Reserve Experimental Welder Rework
   - type: Tool
-    speedModifier: 1.5
+    speedModifier: 1.5 #Reserve Experimental Welder Rework
 
 - type: entity
   name: experimental welding tool
   parent: Welder
   id: WelderExperimental
-  description: "An experimental welder that is less harmful to the eyes while having a hotter flame and slowly regenerating fuel."
+  description: "An experimental welder that is less harmful to the eyes while having a hotter flame and slowly regenerating fuel." #Reserve Experimental Welder Rework
   components:
   - type: Sprite
     sprite: Objects/Tools/welder_experimental.rsi
@@ -290,8 +290,8 @@
       Welder:
         reagents:
         - ReagentId: WeldingFuel
-          Quantity: 200
-        maxVol: 200
+          Quantity: 200 #Reserve Experimental Welder Rework
+        maxVol: 200 #Reserve Experimental Welder Rework
   - type: PointLight
     enabled: false
     radius: 1.5
@@ -301,7 +301,7 @@
     generated:
       reagents:
       - ReagentId: WeldingFuel
-        Quantity: 0.5
+        Quantity: 0.5 #Reserve Experimental Welder Rework
   - type: RequiresEyeProtection
     statusEffectTime: 5 # less harmful; sunglasses can block it
   - type: PhysicalComposition #Goobstation - Recycle update
@@ -313,8 +313,8 @@
   - type: Tag # Goobstation-WelderSword
     tags:
     - WelderExperimental
-  - type: Tool
-    speedModifier: 2
+  - type: Tool #Reserve Experimental Welder Rework
+    speedModifier: 2 #Reserve Experimental Welder Rework
 
 - type: entity
   name: emergency welding tool
