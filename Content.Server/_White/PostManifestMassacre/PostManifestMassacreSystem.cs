@@ -20,21 +20,21 @@ public sealed class PostManifestMassacreSystem : EntitySystem
     [Dependency] private readonly SharedHandsSystem _hands = default!;
     [Dependency] private readonly IRobustRandom _robustRandom = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
-    
+
     private ProtoId<EntityListPrototype> _weaponsPrototypeId = "PostManifestMassacreWeapons";
-    
+
     public override void Initialize()
     {
         base.Initialize();
 
-        SubscribeLocalEvent<RoundEndedEvent>(OnRoundEnded);
+        SubscribeLocalEvent<RoundEndTextAppendEvent>(OnRoundEnded); //Reserve edit
     }
 
-    private void OnRoundEnded(RoundEndedEvent ev)
+    private void OnRoundEnded(RoundEndTextAppendEvent ev) //Reserve edit
     {
         if(!_cfg.GetCVar(WhiteCVars.PMMEnabled) || !_prototypeManager.TryIndex(_weaponsPrototypeId , out EntityListPrototype? prototype))
             return;
-            
+
         var weapons = prototype.EntityIds;
 
         var players = AllEntityQuery<HumanoidAppearanceComponent, ActorComponent, MobStateComponent>();
@@ -43,7 +43,7 @@ public sealed class PostManifestMassacreSystem : EntitySystem
         {
             if (!_mobState.IsAlive(uid, mob))
                 continue;
-            
+
             var weapon = Spawn(_robustRandom.Pick(weapons), Transform(uid).Coordinates);
             _hands.TryPickup(uid, weapon);
         }
