@@ -244,9 +244,9 @@
   - type: SiliconLawProvider
     laws: Crewsimov
   - type: IonStormTarget
-  - type: Strippable
+  - type: Strippable # Reserve ai update
   - type: StationAiVision
-  - type: InventorySlots
+  - type: InventorySlots # Reserve ai update
   - type: Inventory
     templateId: borg
   - type: Hands
