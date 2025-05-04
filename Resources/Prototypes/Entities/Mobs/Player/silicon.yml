@@ -274,7 +274,6 @@
     state: std_mod
   - type: SiliconLawProvider
     laws: NTDefault
-# Reserve
 
 - type: entity
   id: TyrantCircuitBoard
