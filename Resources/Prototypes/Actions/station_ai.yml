@@ -18,6 +18,7 @@
       state: ai_core
     event: !type:JumpToCoreEvent
 
+# Reserve ai update begin
 - type: entity
   id: ActionShowJobIcons
   name: Show job icons
@@ -33,6 +34,7 @@
       components:
       - type: ShowJobIcons
       - type: ShowCriminalRecordIcons # WD edit
+# Reserve ai update end
 
 - type: entity
   id: ActionSurvCameraLights
