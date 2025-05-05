@@ -1,6 +1,7 @@
 using Content.Server.Administration.Logs;
 using Content.Server.Chat.Managers;
 using Content.Server.GameTicking;
+using Content.Server.Mind;
 using Content.Shared.Database;
 using Content.Shared.CCVar;
 using Content.Shared.Ghost;
@@ -13,6 +14,7 @@ namespace Content.Server.Ghost; // Reserve - Respawn
 
 public sealed class GhostReturnToRoundSystem : EntitySystem
 {
+    [Dependency] private readonly MindSystem _mindSystem = default!; // WD EDIT
     [Dependency] private readonly IChatManager _chatManager = default!;
     [Dependency] private readonly IAdminLogManager _adminLogger = default!;
     [Dependency] private readonly IPlayerManager _playerManager = default!;
@@ -57,8 +59,14 @@ public sealed class GhostReturnToRoundSystem : EntitySystem
         }
 
         var deathTime = EnsureComp<GhostComponent>(uid).TimeOfDeath;
-        var timeUntilRespawn = _cfg.GetCVar(CCVars.GhostRespawnTime);
-        var timePast = (_gameTiming.CurTime - deathTime).TotalMinutes;
+        // WD EDIT START
+        if (_mindSystem.TryGetMind(uid, out _, out var mind) && mind.TimeOfDeath.HasValue)
+            deathTime = mind.TimeOfDeath.Value;
+
+        var timeUntilRespawn = TimeSpan.FromMinutes(_cfg.GetCVar(CCVars.GhostRespawnTime));
+        var timePast = _gameTiming.CurTime - deathTime;
+        var timeLeft = timeUntilRespawn - timePast;
+        // WD EDIT END
         if (timePast >= timeUntilRespawn)
         {
             _playerManager.TryGetSessionById(userId, out var targetPlayer);
@@ -68,13 +76,17 @@ public sealed class GhostReturnToRoundSystem : EntitySystem
 
             _adminLogger.Add(LogType.Mind, LogImpact.Medium, $"{Loc.GetString("ghost-respawn-log-return-to-lobby", ("userName", connectedClient.UserName))}");
 
-            message = Loc.GetString("ghost-respawn-window-rules-footer");
+            // WD EDIT START
+            message = timeLeft.Minutes > 0
+            ? Loc.GetString("ghost-respawn-minutes-left", ("time", timeLeft.Minutes))
+            : Loc.GetString("ghost-respawn-seconds-left", ("time", timeLeft.Seconds));
+            // WD EDIT END
             wrappedMessage = Loc.GetString("chat-manager-server-wrap-message", ("message", message));
 
             return;
         }
 
-        message = Loc.GetString("ghost-respawn-time-left", ("time", (int) (timeUntilRespawn - timePast)));
+        message = Loc.GetString("ghost-respawn-time-left", ("time", timeLeft.Minutes));
         wrappedMessage = Loc.GetString("chat-manager-server-wrap-message", ("message", message));
     }
 }
