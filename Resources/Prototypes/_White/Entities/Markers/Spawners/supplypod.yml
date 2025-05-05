@@ -32,11 +32,11 @@
         state: overlay
   - type: RandomSpawner
     prototypes:
-      - SupplyPodCircleSyndicateSurplus5TK
-      - SupplyPodCircleSyndicateSurplus10TK
-      - SupplyPodCircleSyndicateSurplus15TK
+      - SupplyPodCircleSyndicateSurplus25TK #Goob
+      - SupplyPodCircleSyndicateSurplus50TK #Goob
+      - SupplyPodCircleSyndicateSurplus75TK #Goob
     chance: 0.98
     rarePrototypes:
-      - SupplyPodCircleSyndicateSurplus20TK
-      - SupplyPodCircleSyndicateSurplus25TK
+      - SupplyPodCircleSyndicateSurplus100TK #Goob
+      - SupplyPodCircleSyndicateSurplus125TK #Goob
     rareChance: 0.02

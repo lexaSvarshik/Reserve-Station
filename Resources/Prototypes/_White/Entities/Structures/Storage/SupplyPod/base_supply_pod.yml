@@ -47,7 +47,7 @@
     resistance: 5
   - type: ExplosionResistance
     worn: false
-    damageCoefficient: 0.1
+    damageCoefficient: 0 #Unless it can fucking explode everything inside
   - type: ContainerContainer
     containers:
       entity_storage: !type:Container
