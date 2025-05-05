@@ -482,6 +482,7 @@ namespace Content.Server.GameTicking
             _adminLogger.Add(LogType.LateJoin,
                 LogImpact.Low,
                 $"{player.Name} late joined the round as an Observer with {ToPrettyString(ghost):entity}.");
+        }
         //WD EDIT START
         private bool CheckGhostReturnToRound(ICommonSession player, HumanoidCharacterProfile character, out bool checkAvoid)
         {
@@ -548,6 +549,7 @@ namespace Content.Server.GameTicking
             var coordinates = GetObserverSpawnPoint();
             return EntityManager.SpawnEntity(ObserverPrototypeName, coordinates);
         }
+        #endregion
 
         #region Spawn Points
 
@@ -631,6 +633,6 @@ namespace Content.Server.GameTicking
             return EntityCoordinates.Invalid;
         }
 
-        #endregion
+    #endregion
     }
 }

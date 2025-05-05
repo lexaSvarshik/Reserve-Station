@@ -67,8 +67,18 @@ using System.Linq;
 using System.Threading.Tasks;
 using Content.Server._White.Ghost;
 using Content.Server.GameTicking.Presets;
+using Content.Server.Ghost;
 using Content.Server.Maps;
 using Content.Shared.CCVar;
+using Content.Shared.Damage;
+using Content.Shared.Damage.Prototypes;
+using Content.Shared.Database;
+using Content.Shared.FixedPoint;
+using Content.Shared.Ghost;
+using Content.Shared.Mind;
+using Content.Shared.Mobs;
+using Content.Shared.Mobs.Components;
+using Content.Shared.Mobs.Systems;
 using JetBrains.Annotations;
 using Robust.Shared.Player;
 using System.Diagnostics.CodeAnalysis;
@@ -81,6 +91,8 @@ namespace Content.Server.GameTicking
     {
         [Dependency] private readonly MobThresholdSystem _mobThresholdSystem = default!;
         [Dependency] private readonly GhostReturnToRoundSystem _ghostReturnToRound = default!; // WD EDIT
+        [Dependency] private readonly MobStateSystem _mobState = default!; //Reserve edit
+        [Dependency] private readonly DamageableSystem _damageable = default!; //Reserve edit
 
         public const float PresetFailedCooldownIncrease = 30f;
 
