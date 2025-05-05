@@ -23,7 +23,7 @@
   id: SupplyPodSyndicateSurplusBundle
   components:
     - type: SurplusBundle
-      totalPrice: 50
+      totalPrice: 250 #Goob
 
 # SyndicateSuperSurplusBundle
 - type: entity
@@ -50,7 +50,7 @@
   id: SupplyPodSyndicateSuperSurplusBundle
   components:
     - type: SurplusBundle
-      totalPrice: 125
+      totalPrice: 625 #Goob
 
 # CybersunJuggernautBundle
 - type: entity
@@ -111,3 +111,35 @@
     - type: StorageFill
       contents:
         - id: MobGondola
+
+# DreadnoughtBundle
+- type: entity
+  parent: BaseSupplyPodTargetCircle
+  id: SupplyPodCircleCybersunDreadnoughtBundle
+  suffix: Dreadnought bundle, Syndicate
+  components:
+    - type: TimedSpawner
+      prototypes:
+        -  SupplyPodFallingAnimationCybersunDreadnoughtBundle
+
+- type: entity
+  parent: SupplyPodSyndicateFallingAnimation
+  categories: [ HideSpawnMenu ]
+  id: SupplyPodFallingAnimationCybersunDreadnoughtBundle
+  components:
+    - type: TimedSpawner
+      prototypes:
+        - SupplyPodCybersunDreadnoughtBundle
+
+- type: entity
+  parent: SupplyPodCapsuleSyndicate
+  categories: [ HideSpawnMenu ]
+  id: SupplyPodCybersunDreadnoughtBundle
+  components:
+    - type: StorageFill
+      contents:
+        - id: ClothingOuterHardsuitCybersunDreadnought
+        - id: ClothingMaskGasSyndicate
+        - id: ClothingHandsGlovesCombat
+        - id: DoubleEmergencyOxygenTankFilled
+        - id: DoubleEmergencyNitrogenTankFilled
