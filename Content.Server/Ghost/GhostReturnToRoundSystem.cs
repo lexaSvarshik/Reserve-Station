@@ -75,18 +75,18 @@ public sealed class GhostReturnToRoundSystem : EntitySystem
                 _ticker.Respawn(targetPlayer);
 
             _adminLogger.Add(LogType.Mind, LogImpact.Medium, $"{Loc.GetString("ghost-respawn-log-return-to-lobby", ("userName", connectedClient.UserName))}");
-
-            // WD EDIT START
-            message = timeLeft.Minutes > 0
-            ? Loc.GetString("ghost-respawn-minutes-left", ("time", timeLeft.Minutes))
-            : Loc.GetString("ghost-respawn-seconds-left", ("time", timeLeft.Seconds));
-            // WD EDIT END
+            message = Loc.GetString("ghost-respawn-success");
             wrappedMessage = Loc.GetString("chat-manager-server-wrap-message", ("message", message));
-
             return;
         }
-
-        message = Loc.GetString("ghost-respawn-time-left", ("time", timeLeft.Minutes));
+        else
+        {
+        // WD EDIT START
+        message = timeLeft.Minutes > 0
+        ? Loc.GetString("ghost-respawn-minutes-left", ("time", timeLeft.Minutes))
+        : Loc.GetString("ghost-respawn-seconds-left", ("time", timeLeft.Seconds));
         wrappedMessage = Loc.GetString("chat-manager-server-wrap-message", ("message", message));
+        // WD EDIT END
+        }
     }
 }

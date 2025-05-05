@@ -247,7 +247,7 @@ public sealed partial class CCVars : CVars
     #region GhostRespawn
 
     public static readonly CVarDef<double> GhostRespawnTime =
-        CVarDef.Create("ghost.respawn_time", 15d, CVar.SERVERONLY);
+        CVarDef.Create("ghost.respawn_time", 10d, CVar.SERVERONLY);
 
     public static readonly CVarDef<int> GhostRespawnMaxPlayers =
         CVarDef.Create("ghost.respawn_max_players", 999, CVar.SERVERONLY);
