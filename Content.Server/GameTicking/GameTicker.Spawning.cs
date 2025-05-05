@@ -264,6 +264,7 @@ namespace Content.Server.GameTicking
                 return;
             }
 
+            // Reserve - Respawn begin
             //Ghost system return to round, check for whether the character isn't the same.
             if (lateJoin && !_adminManager.IsAdmin(player) && !CheckGhostReturnToRound(player, character, out var checkAvoid))
             {
@@ -277,6 +278,7 @@ namespace Content.Server.GameTicking
 
                 return;
             }
+            // Reserve - Respawn end
 
             // We raise this event to allow other systems to handle spawning this player themselves. (e.g. late-join wizard, etc)
             var bev = new PlayerBeforeSpawnEvent(player, character, jobId, lateJoin, station);
@@ -518,7 +520,6 @@ namespace Content.Server.GameTicking
 
             return true;
         }
-        // Reserve - Respawn end
 
         private float CalculateStringSimilarity(string str1, string str2)
         {
@@ -536,6 +537,7 @@ namespace Content.Server.GameTicking
 
             return similarityPercentage;
         }
+        // Reserve - Respawn end
 
         #region Mob Spawning Helpers
         private EntityUid SpawnObserverMob()

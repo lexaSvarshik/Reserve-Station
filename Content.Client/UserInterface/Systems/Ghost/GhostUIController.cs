@@ -150,7 +150,7 @@ public sealed class GhostUIController : UIController, IOnSystemChanged<GhostSyst
         Gui.GhostBarWindow.SpawnButtonPressed += GhostBarSpawnPressed; // Goobstation - Ghost Bar
         Gui.TargetWindow.WarpClicked += OnWarpClicked;
         Gui.TargetWindow.OnGhostnadoClicked += OnGhostnadoClicked;
-        Gui.ReturnToRoundPressed += ReturnToRound;
+        Gui.ReturnToRoundPressed += ReturnToRound; // Reserve - Respawn
 
         UpdateGui();
     }
@@ -166,7 +166,7 @@ public sealed class GhostUIController : UIController, IOnSystemChanged<GhostSyst
         Gui.GhostBarPressed -= GhostBarPressed; // Goobstation - Ghost Bar
         Gui.GhostBarWindow.SpawnButtonPressed -= GhostBarSpawnPressed; // Goobstation - Ghost Bar
         Gui.TargetWindow.WarpClicked -= OnWarpClicked;
-        Gui.ReturnToRoundPressed -= ReturnToRound;
+        Gui.ReturnToRoundPressed -= ReturnToRound; // Reserve - Respawn
 
         Gui.Hide();
     }
@@ -176,7 +176,7 @@ public sealed class GhostUIController : UIController, IOnSystemChanged<GhostSyst
         _system?.ReturnToBody();
     }
 
-    private void ReturnToRound()
+    private void ReturnToRound() // Reserve - Respawn
     {
         _system?.ReturnToRound();
     }

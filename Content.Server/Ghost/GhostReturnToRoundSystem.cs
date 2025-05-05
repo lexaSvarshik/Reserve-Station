@@ -9,7 +9,7 @@ using Robust.Shared.Configuration;
 using Robust.Shared.Network;
 using Robust.Shared.Timing;
 
-namespace Content.Server.Ghost;
+namespace Content.Server.Ghost; // Reserve - Respawn
 
 public sealed class GhostReturnToRoundSystem : EntitySystem
 {
