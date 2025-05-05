@@ -80,7 +80,7 @@ ent-SupplyPodNPCGondola = { ent-SupplyPodCapsuleGondola }
 
 ent-SupplyPodCircleCybersunDreadnoughtBundle = { ent-BaseSupplyPodTargetCircle }
     .desc = { ent-BaseSupplyPodTargetCircle.desc }
-    .suffix = Костюм джаггернаута Cybersun, Синдикат
+    .suffix = Костюм дредноута, Синдикат
 ent-SupplyPodFallingAnimationCybersunDreadnoughtBundle = { ent-SupplyPodSyndicateFallingAnimation }
     .desc = { ent-SupplyPodSyndicateFallingAnimation.desc }
 ent-SupplyPodCybersunDreadnoughtBundle = { ent-SupplyPodCapsuleSyndicate }
