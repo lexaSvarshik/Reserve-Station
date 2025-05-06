@@ -809,9 +809,10 @@ public sealed partial class ServerApi : IPostInjectInit
 
         await RunOnMainThread(async () =>
         {
-            var clients = _admin.ActiveAdmins.Select(p => p.Channel).ToList();
+            var clients = _admin.ActiveAdmins
             .Where(admin => _adminManager.GetAdminData(admin)?.Flags.HasFlag(AdminFlags.Adminchat) == true)
-            .Select(p => p.Channel).ToList();
+            .Select(p => p.Channel)
+            .ToList();
 
             // Используем Loc.GetString для формирования сообщения
             var wrappedMessage = Loc.GetString("chat-manager-send-admin-chat-wrap-message",
