@@ -50,7 +50,7 @@
         01
       </Box>
     </ColorBox>
-    <ColorBox Color="#65b36c">
+    <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
       </Box>
     </ColorBox>
@@ -69,11 +69,11 @@
         11
       </Box>
     </ColorBox>
-    <ColorBox Color="#65b36c">
+    <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
       </Box>
     </ColorBox>
-    <ColorBox Color="#ed8a63">
+    <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
       </Box>
     </ColorBox>
@@ -164,7 +164,7 @@
         05
       </Box>
     </ColorBox>
-    <ColorBox Color="#65b36c">
+    <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
       </Box>
     </ColorBox>
@@ -173,7 +173,7 @@
         Злоупотребление властью
       </Box>
     </ColorBox>
-    <ColorBox Color="#bf4c4c">
+    <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
       </Box>
     </ColorBox>
