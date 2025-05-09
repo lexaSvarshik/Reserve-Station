@@ -17,6 +17,7 @@
 using Content.Server.GameTicking.Rules;
 using Content.Server._Goobstation.Objectives.Components;
 using Content.Server.Objectives.Components;
+using Content.Server.Revolutionary.Components; //Reserve
 using Content.Server.Shuttles.Systems;
 using Content.Shared.CCVar;
 using Content.Shared.Roles.Jobs;
@@ -42,7 +43,6 @@ public sealed class KillPersonConditionSystem : EntitySystem
     [Dependency] private readonly SharedJobSystem _job = default!;
     [Dependency] private readonly IPrototypeManager _proto = default!; // DeltaV
     [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly SharedMindSystem _mind = default!;
     [Dependency] private readonly SharedRoleSystem _role = default!; // DeltaV
     [Dependency] private readonly TargetObjectiveSystem _target = default!;
     [Dependency] private readonly TraitorRuleSystem _traitor = default!;
@@ -91,12 +91,6 @@ public sealed class KillPersonConditionSystem : EntitySystem
 
         // Get all alive humans, filter out any with TargetObjectiveImmuneComponent
         var allHumans = _mind.GetAliveHumans(args.MindId)
-            .Where(mindId =>
-            {
-                if (!TryComp<MindComponent>(mindId, out var mindComp) || mindComp.OwnedEntity == null)
-                    return false;
-                return !HasComp<TargetObjectiveImmuneComponent>(mindComp.OwnedEntity.Value);
-            })
             .ToList();
 
         // Begin DeltaV Additions: Only target people with jobs
