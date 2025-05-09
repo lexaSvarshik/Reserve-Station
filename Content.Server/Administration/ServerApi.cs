@@ -936,7 +936,7 @@ public sealed partial class ServerApi : IPostInjectInit
                 Expires = DateTimeOffset.Now + TimeSpan.FromMinutes(minutes)
             };
 
-            await _discordBanInfoSender.SendBanInfoAsync<PostServerBanPayloadGenerator>(banInfo);
+            await _discordBanInfoSender.SendBanInfoAsync<ServerBanPayloadGenerator>(banInfo);
             await RespondOk(context);
             _sawmill.Info($"{actor.Name} banned {body.NickName} for {body.Time} minutes. Reason: {body.Reason}");
         });
