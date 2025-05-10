@@ -65,3 +65,7 @@
         right:
           - state: inhand-right-blade
             shader: unshaded
+    - type: Construction
+      deconstructionTarget: null
+      graph: DoubleToySwordGraph
+      node: desword
