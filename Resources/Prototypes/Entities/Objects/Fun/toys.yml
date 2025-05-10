@@ -1723,6 +1723,12 @@
     - type: Tag
       tags:
       - ToySword #Goobstation
+    #reserve toy sword tweaks begin
+    - type: Construction
+      deconstructionTarget: null
+      graph: DoubleToySwordGraph
+      node: esword
+    #reserve toy sword tweaks end
 
 - type: entity
   parent: BasePlushie
