@@ -11,7 +11,7 @@ namespace Content.Server.Chat.Systems;
 /// <summary>
 ///     AnnounceTTSSystem is responsible for TTS announcements, such as through the Station AI.
 /// </summary>
-public sealed partial class AnnounceTtsSystem : EntitySystem
+public sealed partial class AnnounceTTSSystem : EntitySystem
 {
 	[Dependency] private readonly SharedAudioSystem _audio = default!;
 	[Dependency] private readonly IEntityManager _entityManager = default!;
