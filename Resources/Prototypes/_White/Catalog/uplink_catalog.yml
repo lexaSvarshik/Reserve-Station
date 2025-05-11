@@ -13,9 +13,9 @@
   description: uplink-experimental-syndicate-teleporter-desc
   productEntity: ExperimentalSyndicateTeleporter
   cost:
-    Telecrystal: 10
+    Telecrystal: 50 #Goob
   categories:
-    - UplinkUtility
+    - UplinkDisruption #Reserve
 
 - type: listing
   id: UplinkBetrayalKnife
