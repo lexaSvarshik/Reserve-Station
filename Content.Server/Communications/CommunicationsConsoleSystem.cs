@@ -82,7 +82,7 @@ namespace Content.Server.Communications
         [Dependency] private readonly UserInterfaceSystem _uiSystem = default!;
         [Dependency] private readonly IConfigurationManager _cfg = default!;
         [Dependency] private readonly IAdminLogManager _adminLogger = default!;
-		[Dependency] private readonly AnnounceTTSSystem _announceTtsSystem = default!;
+		[Dependency] private readonly AnnounceTTSSystem _announceTtsSystem = default!; //Reserve - ai TTS
 
         private const float UIUpdateInterval = 5.0f;
 
@@ -279,7 +279,7 @@ namespace Content.Server.Communications
             var maxLength = _cfg.GetCVar(CCVars.ChatMaxAnnouncementLength);
             var msg = SharedChatSystem.SanitizeAnnouncement(message.Message, maxLength);
             var author = Loc.GetString("comms-console-announcement-unknown-sender");
-			bool canTTS = false;
+			bool canTTS = false; //Reserve - ai TTS
             if (message.Actor is { Valid: true } mob)
             {
                 if (!CanAnnounce(comp))
@@ -293,7 +293,7 @@ namespace Content.Server.Communications
                     return;
                 }
 
-				canTTS = _announceTtsSystem.CanTTS(mob);
+				canTTS = _announceTtsSystem.CanTTS(mob); //Reserve - ai TTS
 
                 var tryGetIdentityShortInfoEvent = new TryGetIdentityShortInfoEvent(uid, mob);
                 RaiseLocalEvent(tryGetIdentityShortInfoEvent);
@@ -310,21 +310,23 @@ namespace Content.Server.Communications
             Loc.TryGetString(comp.Title, out var title);
             title ??= comp.Title;
 			
-			Console.WriteLine(comp.Title);
+			Console.WriteLine(comp.Title); //Reserve - ai TTS
 
-			List<string> announcementWords = new List<string>{};
+			//Reserve - ai TTS begin
+            List<string> announcementWords = new List<string>{};
 			if (canTTS)
 				announcementWords = AnnounceTTSSystem.PrepareTTSMessage((string)msg);
 			msg += "\n" + Loc.GetString("comms-console-announcement-sent-by") + " " + author;
+            //Reserve - ai TTS end
             if (comp.Global)
             {
-                _chatSystem.DispatchGlobalAnnouncement(msg, title, announcementSound: comp.Sound, colorOverride: comp.Color, announcementWords: announcementWords);
+                _chatSystem.DispatchGlobalAnnouncement(msg, title, announcementSound: comp.Sound, colorOverride: comp.Color, announcementWords: announcementWords); //Reserve - ai TTS
 
                 _adminLogger.Add(LogType.Chat, LogImpact.Low, $"{ToPrettyString(message.Actor):player} has sent the following global announcement: {msg}");
                 return;
             }
 
-            _chatSystem.DispatchStationAnnouncement(uid, msg, title, colorOverride: comp.Color, announcementWords: announcementWords);
+            _chatSystem.DispatchStationAnnouncement(uid, msg, title, colorOverride: comp.Color, announcementWords: announcementWords); //Reserve - ai TTS
 
             _adminLogger.Add(LogType.Chat, LogImpact.Low, $"{ToPrettyString(message.Actor):player} has sent the following station announcement: {msg}");
 

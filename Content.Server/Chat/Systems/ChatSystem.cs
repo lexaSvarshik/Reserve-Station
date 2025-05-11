@@ -460,7 +460,7 @@ public sealed partial class ChatSystem : SharedChatSystem
         bool playSound = true,
         SoundSpecifier? announcementSound = null,
         Color? colorOverride = null,
-		List<string>? announcementWords = null
+		List<string>? announcementWords = null //Reserve - ai TTS
         )
     // Reserve-Start
     {
@@ -558,7 +558,7 @@ public sealed partial class ChatSystem : SharedChatSystem
         if (playDefaultSound)
         {
             _audio.PlayGlobal(announcementSound ?? new SoundPathSpecifier(DefaultAnnouncementSound), filter, true, AudioParams.Default.WithVolume(-2f));
-			//Reserve - ai TTS begin
+	//Reserve - ai TTS begin
             if (announcementWords != null)
 			{
 				_announceTtsSystem.QueueTTSMessage(announcementWords, DefaultAnnouncementSound);
@@ -573,6 +573,7 @@ public sealed partial class ChatSystem : SharedChatSystem
 		{
 			_announceTtsSystem.QueueTTSMessage(announcementWords);
 		}
+    //Reserve - ai TTS end
 
         _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Station Announcement on {station} from {sender}: {message}");
     }
