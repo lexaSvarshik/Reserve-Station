@@ -4,20 +4,12 @@
 //
 // SPDX-License-Identifier: MIT
 
-<<<<<<<< HEAD:Content.Goobstation.Shared/Bible/BibleUserComponent.cs
-namespace Content.Goobstation.Shared.Bible
-========
 namespace Content.Shared.Bible.Components
->>>>>>>> Goob/master:Content.Shared/Bible/Components/SummonableRespawningComponent.cs
 {
     /// <summary>
     /// EntityQuery Tracking Component for Summonables that are counting up a respawn.
     /// </summary>
     [RegisterComponent]
-<<<<<<<< HEAD:Content.Goobstation.Shared/Bible/BibleUserComponent.cs
-    public sealed partial class BibleUserComponent : Component {}
-========
     public sealed partial class SummonableRespawningComponent : Component
     {}
->>>>>>>> Goob/master:Content.Shared/Bible/Components/SummonableRespawningComponent.cs
 }
