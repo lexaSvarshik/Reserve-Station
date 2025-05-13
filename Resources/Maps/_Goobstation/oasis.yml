@@ -69,13 +69,8 @@ meta:
   engineVersion: 248.0.2
   forkId: ""
   forkVersion: ""
-<<<<<<< HEAD
-  time: 03/29/2025 00:34:57
-  entityCount: 28723
-=======
   time: 05/04/2025 23:38:59
   entityCount: 29975
->>>>>>> Goob/master
 maps:
 - 1
 grids:
@@ -11974,27 +11969,6 @@ entities:
     - type: Transform
       pos: 50.5,-14.5
       parent: 2
-<<<<<<< HEAD
-  - uid: 120
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 39.5,-21.5
-      parent: 2
-  - uid: 121
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 39.5,-20.5
-      parent: 2
-    - type: Door
-      secondsUntilStateChange: -8953.222
-      state: Opening
-    - type: DeviceLinkSource
-      lastSignals:
-        DoorStatus: True
-=======
->>>>>>> Goob/master
 - proto: AirlockArmoryLocked
   entities:
   - uid: 261
@@ -13763,11 +13737,7 @@ entities:
       pos: 46.5,-40.5
       parent: 2
     - type: Door
-<<<<<<< HEAD
-      secondsUntilStateChange: -445507.53
-=======
       secondsUntilStateChange: -485497.75
->>>>>>> Goob/master
       state: Opening
   - uid: 355
     components:
@@ -14299,11 +14269,7 @@ entities:
       pos: -3.5,-35.5
       parent: 2
     - type: Door
-<<<<<<< HEAD
-      secondsUntilStateChange: -561675.1
-=======
       secondsUntilStateChange: -601665.44
->>>>>>> Goob/master
       state: Opening
   - uid: 422
     components:
@@ -69796,18 +69762,10 @@ entities:
       parent: 2
 - proto: CapsaicinDispenser
   entities:
-<<<<<<< HEAD
-  - uid: 7709
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 55.5,-14.5
-=======
   - uid: 29853
     components:
     - type: Transform
       pos: 39.5,-22.5
->>>>>>> Goob/master
       parent: 2
 - proto: CarbonDioxideCanister
   entities:
@@ -129279,18 +129237,10 @@ entities:
       parent: 2
 - proto: GlassBoxLawbringerFilled
   entities:
-<<<<<<< HEAD
-  - uid: 7708
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 42.5,-41.5
-=======
   - uid: 29854
     components:
     - type: Transform
       pos: 37.5,-39.5
->>>>>>> Goob/master
       parent: 2
 - proto: GlowstickYellow
   entities:
@@ -188178,27 +188128,6 @@ entities:
       parent: 2
 - proto: WindoorSecureArmoryLocked
   entities:
-<<<<<<< HEAD
-  - uid: 22320
-    components:
-    - type: Transform
-      pos: 38.5,-18.5
-      parent: 2
-    - type: DeviceLinkSource
-      lastSignals:
-        DoorStatus: True
-    - type: Door
-      secondsUntilStateChange: -8947.089
-      state: Opening
-    - type: Airlock
-      autoClose: False
-  - uid: 22321
-    components:
-    - type: Transform
-      pos: 37.5,-18.5
-      parent: 2
-=======
->>>>>>> Goob/master
   - uid: 22322
     components:
     - type: Transform
@@ -189819,9 +189748,6 @@ entities:
       pos: 24.5,2.5
       parent: 22618
     - type: Door
-<<<<<<< HEAD
-      secondsUntilStateChange: -339806.78
-=======
       secondsUntilStateChange: -379797
       state: Opening
   - uid: 29025
@@ -189832,7 +189758,6 @@ entities:
       parent: 2
     - type: Door
       secondsUntilStateChange: -33753.332
->>>>>>> Goob/master
       state: Opening
 - proto: WoodenBench
   entities:
