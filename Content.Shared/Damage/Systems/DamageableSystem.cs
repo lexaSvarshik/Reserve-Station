@@ -630,8 +630,6 @@ namespace Content.Shared.Damage
             }
         }
 
-<<<<<<< HEAD
-=======
         public Dictionary<string, FixedPoint2> DamageSpecifierToWoundList(
             EntityUid uid,
             EntityUid? origin,
@@ -683,7 +681,6 @@ namespace Content.Shared.Damage
             return damageDict;
         }
 
->>>>>>> Goob/master
         /// <summary>
         ///     Change the DamageContainer of a DamageableComponent. - Goobstation, Rubin Code
         /// </summary>
@@ -727,11 +724,7 @@ namespace Content.Shared.Damage
             component.TotalDamage = component.Damage.GetTotal();
         }
 
-<<<<<<< HEAD
-        public void SetDamageModifierSetId(EntityUid uid, string damageModifierSetId, DamageableComponent? comp = null)
-=======
         public void SetDamageModifierSetId(EntityUid uid, string? damageModifierSetId, DamageableComponent? comp = null)
->>>>>>> Goob/master
         {
             if (!_damageableQuery.Resolve(uid, ref comp))
                 return;
