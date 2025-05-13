@@ -28,10 +28,6 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Goobstation.Shared.Bible;
-<<<<<<< HEAD:Content.Server/Bible/BibleSystem.cs
-using Content.Server.Bible.Components;
-=======
->>>>>>> Goob/master:Content.Server/Bible/BibleUserSystem.cs
 using Content.Server.Ghost.Roles.Events;
 using Content.Server.Popups;
 using Content.Shared.ActionBlocker;

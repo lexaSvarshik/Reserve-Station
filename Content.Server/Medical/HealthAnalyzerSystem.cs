@@ -330,7 +330,7 @@ public sealed class HealthAnalyzerSystem : EntitySystem
         if (!healthAnalyzer.Comp.IsAnalyzerActive)
             return;
 
-        UpdateScannedUser(healthAnalyzer, target, false, part);
+        UpdateScannedUser(healthAnalyzer, target, false, healthAnalyzer.Comp.CurrentMode); //Reserve edit
         healthAnalyzer.Comp.IsAnalyzerActive = false;
     }
 
