@@ -11233,12 +11233,6 @@ entities:
     - type: Transform
       pos: -29.5,37.5
       parent: 2
-<<<<<<< HEAD
-    - type: Door
-      secondsUntilStateChange: -23365.982
-      state: Opening
-=======
->>>>>>> Goob/master
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
