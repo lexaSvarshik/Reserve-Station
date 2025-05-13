@@ -7950,11 +7950,7 @@ Entries:
       message: >-
         Radiation now uses 2D propagation system, standing on top of or holding
         radiation sources in your hand is extremely ill advised. doubly more so
-<<<<<<< HEAD
         than before.
-=======
-        than before. 
->>>>>>> Goob/master
     - type: Tweak
       message: >-
         Radiation propagation now takes into account distance traveled through
@@ -8170,11 +8166,7 @@ Entries:
     - type: Add
       message: >-
         Moths move slightly slower but can dash with their wings with 65%
-<<<<<<< HEAD
         chance.
-=======
-        chance. 
->>>>>>> Goob/master
     - type: Tweak
       message: Voxes now do not rot, but you can't clone them.
     - type: Tweak
@@ -8266,8 +8258,6 @@ Entries:
       message: Cyberpsychosis bundle now includes freedom implant.
   id: 951
   time: '2025-05-02T12:08:49.0000000+00:00'
-<<<<<<< HEAD
-=======
 - author: pheenty
   changes:
     - type: Tweak
@@ -9150,4 +9140,25 @@ Entries:
       message: Autodoc now supports automation upgrades.
   id: 1033
   time: '2025-05-12T17:19:44.0000000+00:00'
->>>>>>> Goob/master
+- author: Creatorbot01
+  changes:
+    - type: Tweak
+      message: Mindcontrol implant price changed from 50 tc to 25 tc
+    - type: Tweak
+      message: Friendship bundle now contains 2 more extra mindcontrol implants
+  id: 1034
+  time: '2025-05-13T14:27:22.0000000+00:00'
+- author: pheenty
+  changes:
+    - type: Tweak
+      message: >-
+        All (or at least most, maybe I missed something) armor values are now
+        woundmed-friendly.
+    - type: Tweak
+      message: Hitting limbs is now more likely to miss and hit another limb instead.
+    - type: Fix
+      message: >-
+        Modsuits now shouldn't ocassionally draw 30x more power than they
+        usually do.
+  id: 1035
+  time: '2025-05-13T14:37:39.0000000+00:00'
