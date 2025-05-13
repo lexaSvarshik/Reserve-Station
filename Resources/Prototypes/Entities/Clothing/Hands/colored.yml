@@ -457,6 +457,12 @@
   - type: Fiber
     fiberMaterial: fibers-insulative-frayed
     fiberColor: fibers-yellow
+<<<<<<< HEAD
+=======
+  - type: Tag
+    tags:
+      - BudgetInsuls
+>>>>>>> Goob/master
 
 # Conductive Insulated Gloves
 - type: entity

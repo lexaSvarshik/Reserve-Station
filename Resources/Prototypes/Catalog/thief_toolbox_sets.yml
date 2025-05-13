@@ -156,7 +156,12 @@
   content:
   - StorageImplanter
   - DnaScramblerImplanter
+<<<<<<< HEAD
   - EphedrineChemistryBottle
+=======
+  - ChemistryBottleEphedrine
+  - FoodSnackLollypopWrappedSyndicate # Goobstation
+>>>>>>> Goob/master
   - SoapOmega
   - Syringe
   - DrinkShaker
@@ -185,8 +190,8 @@
     sprite: Objects/Tanks/anesthetic.rsi
     state: icon
   content:
-  - NocturineChemistryBottle
-  - NocturineChemistryBottle
+  - ChemistryBottleNocturine
+  - ChemistryBottleNocturine
   - HypopenBox
   - NitrousOxideTankFilled
 

@@ -149,6 +149,10 @@
   - type: EmitBuzzWhileDamaged
   - type: CanHostGuardian
   - type: WeldingHealable
+<<<<<<< HEAD
+=======
+  - type: DamagedSiliconAccent
+>>>>>>> Goob/master
   - type: Uncloneable
 
 - type: entity

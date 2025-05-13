@@ -74,6 +74,11 @@
     price: 215
   - type: RadiationBlocker
     resistance: 20
+<<<<<<< HEAD
+=======
+  - type: CosmicCorruptible # DeltaV - Cosmic Cult
+    convertTo: WindowCosmicCult
+>>>>>>> Goob/master
 
 - type: entity
   id: UraniumReinforcedWindowDirectional

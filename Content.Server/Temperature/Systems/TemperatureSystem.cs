@@ -84,6 +84,10 @@
 // SPDX-FileCopyrightText: 2024 voidnull000 <18663194+voidnull000@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+<<<<<<< HEAD
+=======
+// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+>>>>>>> Goob/master
 // SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 // SPDX-FileCopyrightText: 2025 Marcus F <199992874+thebiggestbruh@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2025 Marcus F <marcus2008stoke@gmail.com>
@@ -233,10 +237,22 @@ public sealed class TemperatureSystem : EntitySystem
         var tempEv = new TemperatureImmunityEvent(temperature.CurrentTemperature);
         RaiseLocalEvent(uid, tempEv);
         temperature.CurrentTemperature = tempEv.CurrentTemperature;
+<<<<<<< HEAD
         // Goob end
 
         float delta = temperature.CurrentTemperature - temp;
         
+=======
+
+        float delta = temperature.CurrentTemperature - temp;
+
+        var attemptEv = new TemperatureChangeAttemptEvent(temp, lastTemp, delta);
+        RaiseLocalEvent(uid, attemptEv);
+        if (attemptEv.Cancelled)
+            return;
+        // Goob end
+
+>>>>>>> Goob/master
         RaiseLocalEvent(uid, new OnTemperatureChangeEvent(temperature.CurrentTemperature, lastTemp, delta),
             true);
     }
@@ -254,7 +270,10 @@ public sealed class TemperatureSystem : EntitySystem
             heatAmount = ev.TemperatureDelta;
         }
 
+
+        // Goobstation start
         float lastTemp = temperature.CurrentTemperature;
+<<<<<<< HEAD
         temperature.CurrentTemperature += heatAmount / GetHeatCapacity(uid, temperature);
 
         // Goob start
@@ -264,6 +283,23 @@ public sealed class TemperatureSystem : EntitySystem
         // Goob end
 
         float delta = temperature.CurrentTemperature - lastTemp;
+=======
+        float newTemp = temperature.CurrentTemperature + heatAmount / GetHeatCapacity(uid, temperature);
+
+        var tempEv = new TemperatureImmunityEvent(newTemp);
+        RaiseLocalEvent(uid, tempEv);
+        newTemp = tempEv.CurrentTemperature;
+
+        float delta = newTemp - lastTemp;
+
+        var attemptEv = new TemperatureChangeAttemptEvent(newTemp, lastTemp, delta);
+        RaiseLocalEvent(uid, attemptEv);
+        if (attemptEv.Cancelled)
+            return;
+
+        temperature.CurrentTemperature = newTemp;
+        // Goobstation end
+>>>>>>> Goob/master
 
         RaiseLocalEvent(uid, new OnTemperatureChangeEvent(temperature.CurrentTemperature, lastTemp, delta), true);
     }

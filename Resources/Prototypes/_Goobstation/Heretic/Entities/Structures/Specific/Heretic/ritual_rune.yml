@@ -39,8 +39,13 @@
     fixtures:
       rune:
         shape:
+<<<<<<< HEAD
           !type:PhysShapeAabb
            bounds: "-0.8,-0.8,0.8,0.8"
+=======
+          !type:PhysShapeCircle
+          radius: 1.5
+>>>>>>> Goob/master
         hard: false
         mask:
          - ItemMask
@@ -58,10 +63,14 @@
       - !type:PlaySoundBehavior
         sound:
           path: /Audio/_Goobstation/Heretic/runebreak.ogg
+<<<<<<< HEAD
   - type: StepTrigger
     requiredTriggeredSpeed: 0
     intersectRatio: 0.4
   - type: EnchantingTable
+=======
+  - type: EnchantingTable # Goobstation
+>>>>>>> Goob/master
 
 - type: entity
   id: HereticRuneRitualDrawAnimation

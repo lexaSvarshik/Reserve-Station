@@ -41,8 +41,14 @@
     state: icon
   - type: RandomMetadata
     nameSegments:
+<<<<<<< HEAD
     - NamesMilitaryFirstLeader #Reserve datasets fix
     - NamesMilitaryLast #Reserve datasets fix
+=======
+    - NamesMilitaryFirstLeader
+    - NamesMilitaryLast
+    nameFormat: name-format-standard 
+>>>>>>> Goob/master
   - type: RandomHumanoidSpawner
     settings: NavyOfficer
 
@@ -64,8 +70,14 @@
     roleLoadout: [ RoleSurvivalEVA ]
   - type: RandomMetadata
     nameSegments:
+<<<<<<< HEAD
     - NamesMilitaryFirstLeader #Reserve datasets fix
     - NamesMilitaryLast #Reserve datasets fix
+=======
+    - NamesMilitaryFirstLeader
+    - NamesMilitaryLast
+    nameFormat: name-format-standard 
+>>>>>>> Goob/master
 
 # Navy Captain
 
@@ -79,8 +91,14 @@
     state: icon
   - type: RandomMetadata
     nameSegments:
+<<<<<<< HEAD
     - NamesMilitaryFirstHighRank #Reserve datasets fix
     - NamesMilitaryLast #Reserve datasets fix
+=======
+    - NamesMilitaryFirstHighRank
+    - NamesMilitaryLast
+    nameFormat: name-format-standard
+>>>>>>> Goob/master
   - type: RandomHumanoidSpawner
     settings: NavyCaptain
 
@@ -102,8 +120,14 @@
     roleLoadout: [ RoleSurvivalEVA ]
   - type: RandomMetadata
     nameSegments:
+<<<<<<< HEAD
     - NamesMilitaryFirstHighRank #Reserve datasets fix
     - NamesMilitaryLast #Reserve datasets fix
+=======
+    - NamesMilitaryFirstHighRank
+    - NamesMilitaryLast
+    nameFormat: name-format-standard 
+>>>>>>> Goob/master
 
 # Navy Undercover Officer
 
@@ -117,8 +141,14 @@
     state: icon
   - type: RandomMetadata
     nameSegments:
+<<<<<<< HEAD
     - NamesMilitaryFirstLeader #Reserve datasets fix
     - NamesMilitaryLast #Reserve datasets fix
+=======
+    - NamesMilitaryFirstLeader
+    - NamesMilitaryLast
+    nameFormat: name-format-standard 
+>>>>>>> Goob/master
   - type: RandomHumanoidSpawner
     settings: NavyOfficerUndercover
 
@@ -140,8 +170,14 @@
     roleLoadout: [ RoleSurvivalEVA ]
   - type: RandomMetadata
     nameSegments:
+<<<<<<< HEAD
     - NamesMilitaryFirstLeader #Reserve datasets fix
     - NamesMilitaryLast #Reserve datasets fix
+=======
+    - NamesMilitaryFirstLeader
+    - NamesMilitaryLast
+    nameFormat: name-format-standard 
+>>>>>>> Goob/master
 
 # Special Operations Officer
 
@@ -155,8 +191,14 @@
     state: icon
   - type: RandomMetadata
     nameSegments:
+<<<<<<< HEAD
     - NamesMilitaryFirstHighRank #Reserve datasets fix
     - NamesMilitaryLast #Reserve datasets fix
+=======
+    - NamesMilitaryFirstHighRank
+    - NamesMilitaryLast
+    nameFormat: name-format-standard 
+>>>>>>> Goob/master
   - type: RandomHumanoidSpawner
     settings: SpecialOperationsOfficer
 
@@ -178,8 +220,14 @@
     roleLoadout: [ RoleSurvivalEVA ]
   - type: RandomMetadata
     nameSegments:
+<<<<<<< HEAD
     - NamesMilitaryFirstHighRank #Reserve datasets fix
     - NamesMilitaryLast #Reserve datasets fix
+=======
+    - NamesMilitaryFirstHighRank
+    - NamesMilitaryLast
+    nameFormat: name-format-standard 
+>>>>>>> Goob/master
 
 # Diplomat
 
@@ -193,8 +241,14 @@
     state: icon
   - type: RandomMetadata
     nameSegments:
+<<<<<<< HEAD
     - NamesMilitaryFirstPolitical #Reserve datasets fix
     - NamesLast #Reserve datasets fix
+=======
+    - NamesMilitaryFirstPolitical
+    - NamesLast
+    nameFormat: name-format-standard 
+>>>>>>> Goob/master
   - type: RandomHumanoidSpawner
     settings: DiplomatGear
 
@@ -216,8 +270,14 @@
     roleLoadout: [ RoleSurvivalEVA ]
   - type: RandomMetadata
     nameSegments:
+<<<<<<< HEAD
     - NamesMilitaryFirstPolitical #Reserve datasets fix
     - NamesLast #Reserve datasets fix
+=======
+    - NamesMilitaryFirstPolitical
+    - NamesLast
+    nameFormat: name-format-standard 
+>>>>>>> Goob/master
 
 # Inspector
 
@@ -231,8 +291,14 @@
     state: icon
   - type: RandomMetadata
     nameSegments:
+<<<<<<< HEAD
     - NamesInspectorFirst #Reserve datasets fix
     - NamesLast #Reserve datasets fix
+=======
+    - NamesFirstInspector
+    - NamesLast
+    nameFormat: name-format-standard 
+>>>>>>> Goob/master
   - type: RandomHumanoidSpawner
     settings: InspectorGear
 
@@ -254,8 +320,14 @@
     roleLoadout: [ RoleSurvivalEVA ]
   - type: RandomMetadata
     nameSegments:
+<<<<<<< HEAD
     - NamesInspectorFirst #Reserve datasets fix
     - NamesLast #Reserve datasets fix
+=======
+    - NamesFirstInspector
+    - NamesLast
+    nameFormat: name-format-standard 
+>>>>>>> Goob/master
 
 ## Other Shit
 
@@ -269,7 +341,7 @@
     sprite: Mobs/Species/Human/parts.rsi
     state: full
   - type: RandomMetadata
-    nameSegments: [ names_borer ]
+    nameSegments: [ NamesBorer ]
   - type: RandomHumanoidSpawner
     settings: ChronoLegionnaire
 
@@ -283,6 +355,7 @@
     nameSegments:
     - NamesMilitaryFirstLeader
     - NamesMilitaryLast
+    nameFormat: name-format-standard 
 
 # HECU
 
@@ -298,6 +371,7 @@
     nameSegments:
     - NamesMilitaryFirst
     - NamesMilitaryLast
+    nameFormat: name-format-standard 
   - type: RandomHumanoidSpawner
     settings: HecuSoldier
 
@@ -319,6 +393,7 @@
     nameSegments:
     - NamesMilitaryFirstLeader
     - NamesMilitaryLast
+    nameFormat: name-format-standard
 
 # G-Man
 
@@ -350,7 +425,7 @@
   - type: Loadout
     prototypes: [GovernmentManGear]
   - type: RandomMetadata
-    nameSegments: [ names_gman ]
+    nameSegments: [ NamesGman ]
   - type: Tag
     tags:
     - InstantDoAfters
@@ -403,7 +478,7 @@
   - type: Loadout
     prototypes: [ConquestGear]
   - type: RandomMetadata
-    nameSegments: [ names_conquest ]
+    nameSegments: [ NamesConquest ]
   - type: Puller
     needsHands: false
     throwCooldown: 0.1

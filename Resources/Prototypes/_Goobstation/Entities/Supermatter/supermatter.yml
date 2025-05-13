@@ -87,6 +87,12 @@
     - type: MetaData # Goobstation
     - type: RandomMetadata # Goobstation
       nameSegments:
+<<<<<<< HEAD
       - goob_generators_names_first
       - goob_generators_names_supermatter_last
+=======
+      - GoobGeneratorsNamesFirst
+      - GoobGeneratorsNamesSupermatterLast
+      nameFormat: name-format-standard 
+>>>>>>> Goob/master
     - type: PhysicsGunBlacklist

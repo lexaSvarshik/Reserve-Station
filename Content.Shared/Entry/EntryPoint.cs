@@ -201,7 +201,11 @@ namespace Content.Shared.Entry
             {
                 var missing = module.RequiredAssemblies
                     .Where(req =>
+<<<<<<< HEAD
                         (_net.IsClient && req.Client || _net.IsServer && req.Server) &&
+=======
+                        (_net.IsClient && req.IsClient || _net.IsServer && req.IsServer) &&
+>>>>>>> Goob/master
                         !loadedAssemblies.Contains(req.AssemblyName))
                     .ToList();
 
