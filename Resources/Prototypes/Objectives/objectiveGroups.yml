@@ -125,10 +125,6 @@
     HandTeleporterStealObjective: 0.5
     EnergyShotgunStealObjective: 0.5
     StealSupermatterSliverObjective: 0.5 # Goobstation - supermatter
-<<<<<<< HEAD
-    LawbringerStealObjective: 0.5 # Goobstation
-=======
->>>>>>> Goob/master
 
 - type: weightedRandom
   id: TraitorObjectiveGroupKill

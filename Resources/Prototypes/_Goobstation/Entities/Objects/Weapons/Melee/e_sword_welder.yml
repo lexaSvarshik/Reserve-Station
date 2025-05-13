@@ -1,11 +1,8 @@
 # SPDX-FileCopyrightText: 2025 BeBright <98597725+be1bright@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-<<<<<<< HEAD
-=======
 # SPDX-FileCopyrightText: 2025 LuciferEOS <stepanteliatnik2022@gmail.com>
 # SPDX-FileCopyrightText: 2025 LuciferMkshelter <154002422+LuciferEOS@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
->>>>>>> Goob/master
 # SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
 #
@@ -27,11 +24,6 @@
       map: [ "blade" ]
   - type: Item
     sprite: _Goobstation/Objects/Weapons/Melee/e_sword_welder-inhands.rsi
-<<<<<<< HEAD
-  - type: MeleeWeapon
-    clickPartDamageMultiplier: 2 #goob content
-=======
->>>>>>> Goob/master
   - type: ItemToggleMeleeWeapon
     activatedSoundOnHit:
       path: /Audio/_Goobstation/Weapons/EswordWelder/eblade1.ogg
@@ -70,10 +62,6 @@
         variation: 0.250
   - type: Reflect
     reflectProb: 0.1
-<<<<<<< HEAD
-    otherTypeReflectProb: 0
-=======
->>>>>>> Goob/master
     reflects:
       - Energy
   - type: Welder
@@ -154,8 +142,6 @@
       reagents:
         - ReagentId: WeldingFuel
           Quantity: 3 # Cuz fuelConsumption is 3
-<<<<<<< HEAD
-=======
 
 - type: entity
   name: unfinished welder sword
@@ -204,4 +190,3 @@
   - type: Construction
     graph: WelderSwordExperimental
     node: plasmaFrame
->>>>>>> Goob/master

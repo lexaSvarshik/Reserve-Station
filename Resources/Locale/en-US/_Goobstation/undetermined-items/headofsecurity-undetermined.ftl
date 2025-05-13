@@ -17,8 +17,6 @@ selectable-set-hos-rifle-name = X-8 "Station Sweeper"
 selectable-set-hos-rifle-description =
     An elaborately designed rifle, firing shots of pure phoron.
     Low fire rate, high damage.
-<<<<<<< HEAD
-=======
 
 selectable-set-hos-sword-name = DT-2 "Justice"
 selectable-set-hos-sword-description =
@@ -31,4 +29,3 @@ selectable-set-hos-lawbringer-description =
 selectable-set-hos-utility-name = Utility Set
 selectable-set-hos-utility-description =
     Includes numerous utility items including: Advanced thermal goggles, an upgraded hardsuit, and advanced jackboots.
->>>>>>> Goob/master

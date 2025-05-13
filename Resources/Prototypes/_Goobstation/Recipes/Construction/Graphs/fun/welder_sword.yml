@@ -1,25 +1,17 @@
 # SPDX-FileCopyrightText: 2025 BeBright <98597725+be1bright@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-<<<<<<< HEAD
-=======
 # SPDX-FileCopyrightText: 2025 LuciferEOS <stepanteliatnik2022@gmail.com>
->>>>>>> Goob/master
 # SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-<<<<<<< HEAD
-=======
 # base
->>>>>>> Goob/master
 - type: constructionGraph
   id: WelderSword
   start: start
   graph:
   - node: start
     edges:
-<<<<<<< HEAD
-=======
     - to: frameAssembly
       steps:
       - component: GasTank
@@ -62,7 +54,6 @@
 
   - node: finalAssembly
     edges:
->>>>>>> Goob/master
     - to: welderSword
       steps:
       - tag: Welder
@@ -70,36 +61,18 @@
         icon:
           sprite: Objects/Tools/welder.rsi
           state: icon
-<<<<<<< HEAD
-        doAfter: 2
-      - component: GasTank
-        name: gas tank
-        icon:
-          sprite: Objects/Tanks/oxygen.rsi
-          state: icon
-        doAfter: 2
-      - material: Cable
-        amount: 5
-        doAfter: 2
-  - node: welderSword
-    entity: EnergySwordWelder
-
-=======
         doAfter: 5
 
   - node: welderSword
     entity: EnergySwordWelder
 
 # indus
->>>>>>> Goob/master
 - type: constructionGraph
   id: WelderSwordIndustrial
   start: start
   graph:
   - node: start
     edges:
-<<<<<<< HEAD
-=======
     - to: reinforcedFrameInd
       steps:
       - component: GasTank
@@ -143,7 +116,6 @@
 
   - node: industrialAssembly
     edges:
->>>>>>> Goob/master
     - to: welderSwordIndustrial
       steps:
       - tag: WelderIndustrial
@@ -151,21 +123,6 @@
         icon:
           sprite: Objects/Tools/welder_industrial.rsi
           state: icon
-<<<<<<< HEAD
-        doAfter: 2
-      - component: GasTank
-        name: gas tank
-        icon:
-          sprite: Objects/Tanks/oxygen.rsi
-          state: icon
-        doAfter: 2
-      - material: Cable
-        amount: 5
-        doAfter: 2
-  - node: welderSwordIndustrial
-    entity: EnergySwordWelderIndustrial
-
-=======
         doAfter: 7
       - material: ReinforcedGlass
         amount: 1
@@ -174,15 +131,12 @@
     entity: EnergySwordWelderIndustrial
 
 # exp
->>>>>>> Goob/master
 - type: constructionGraph
   id: WelderSwordExperimental
   start: start
   graph:
   - node: start
     edges:
-<<<<<<< HEAD
-=======
     - to: plasmaFrame
       steps:
       - component: GasTank
@@ -226,7 +180,6 @@
 
   - node: experimentalAssembly
     edges:
->>>>>>> Goob/master
     - to: welderSwordExperimental
       steps:
       - tag: WelderExperimental
@@ -234,23 +187,7 @@
         icon:
           sprite: Objects/Tools/welder_experimental.rsi
           state: icon
-<<<<<<< HEAD
-        doAfter: 2
-      - component: GasTank
-        name: gas tank
-        icon:
-          sprite: Objects/Tanks/oxygen.rsi
-          state: icon
-        doAfter: 2
-      - material: Cable
-        amount: 5
-        doAfter: 2
-  - node: welderSwordExperimental
-    entity: EnergySwordWelderExperimental
-
-=======
         doAfter: 10
 
   - node: welderSwordExperimental
     entity: EnergySwordWelderExperimental
->>>>>>> Goob/master

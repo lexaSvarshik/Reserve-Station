@@ -12,10 +12,7 @@
 # SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
 # SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
 # SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-<<<<<<< HEAD
-=======
 # SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
->>>>>>> Goob/master
 # SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Theodore Lukin <66275205+pheenty@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
@@ -293,16 +290,10 @@
         whitelist:
           tags:
             - EnergyMagAmmo
-<<<<<<< HEAD
-- type: entity
-  name: DT-12 "Lawbringer"
-  parent: [BaseWeaponBatterySmall, BaseGrandTheftContraband]
-=======
 
 - type: entity
   name: DT-12 "Lawbringer"
   parent: [BaseWeaponBatterySmall, BaseSecurityContraband]
->>>>>>> Goob/master
   id: WeaponEnergyGunLawbringer
   description: A versatile energy gun, with many different modes. The owner of this gun embodies the law itself.
   components:
@@ -362,16 +353,8 @@
         shader: unshaded
   - type: Tag
     tags:
-<<<<<<< HEAD
-    - HighRiskItem
     - Sidearm
     - WeaponEnergyGunLawbringer
-  - type: StealTarget
-    stealGroup: WeaponEnergyGunLawbringer
-=======
-    - Sidearm
-    - WeaponEnergyGunLawbringer
->>>>>>> Goob/master
   - type: RestrictById
     restrictMelee: true
     restrictRanged: true
@@ -380,12 +363,8 @@
     price: 750
   - type: TriggerOnVoiceIdLocked
     keyPhrase: "lawbringer-phrase"
-<<<<<<< HEAD
-    listenRange: 0 # only the holder
-=======
     listenRange: 1
     holderOnly: true
->>>>>>> Goob/master
   - type: AccessReader
     access: [['HeadOfSecurity']]
   - type: ActiveListener
@@ -405,11 +384,6 @@
     autoRechargePause: true
     autoRechargePauseTime: 50
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> Goob/master
 - type: entity
   name: ion rifle
   id: WeaponEnergyIonRifle

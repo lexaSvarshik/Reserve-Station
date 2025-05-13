@@ -954,11 +954,7 @@
     highPressureMultiplier: 0.05
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
-<<<<<<< HEAD
-    damageCoefficient: 0.5
-=======
     damageCoefficient: 0.2 #goob
->>>>>>> Goob/master
   - type: Armor
     coverage:
     - Chest

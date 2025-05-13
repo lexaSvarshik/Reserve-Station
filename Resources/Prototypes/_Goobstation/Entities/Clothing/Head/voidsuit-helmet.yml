@@ -153,8 +153,6 @@
   - type: SpeechSoundsReplacer
     speechSounds: Chrono # why? its badass.
 
-<<<<<<< HEAD:Resources/Prototypes/_Goobstation/Entities/Clothing/Head/hardsuit-helmets.yml
-=======
 # Security
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
@@ -186,18 +184,12 @@
   - type: FlashImmunity
   - type: FlashSoundSuppression
 
->>>>>>> Goob/master:Resources/Prototypes/_Goobstation/Entities/Clothing/Head/voidsuit-helmet.yml
 # Head of Security
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitHeadOfSecurityExperimental
-<<<<<<< HEAD:Resources/Prototypes/_Goobstation/Entities/Clothing/Head/hardsuit-helmets.yml
-  name: head of security's advanced hardsuit helmet
-  description: Security hardsuit helmet with the latest top secret NT-HUD software. This one seems more durable than stand issue helmets.
-=======
   name: head of security's advanced voidsuit helmet
   description: Security voidsuit helmet with the latest top secret NT-HUD software. This one seems more durable than stand issue helmets.
->>>>>>> Goob/master:Resources/Prototypes/_Goobstation/Entities/Clothing/Head/voidsuit-helmet.yml
   components:
   - type: Sprite
     sprite: _Goobstation/Clothing/Head/Hardsuits/hos-expi.rsi

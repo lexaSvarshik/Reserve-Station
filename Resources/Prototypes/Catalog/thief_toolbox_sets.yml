@@ -156,12 +156,8 @@
   content:
   - StorageImplanter
   - DnaScramblerImplanter
-<<<<<<< HEAD
-  - EphedrineChemistryBottle
-=======
   - ChemistryBottleEphedrine
   - FoodSnackLollypopWrappedSyndicate # Goobstation
->>>>>>> Goob/master
   - SoapOmega
   - Syringe
   - DrinkShaker

@@ -200,19 +200,11 @@
     - Tail
     modifiers:
       coefficients:
-<<<<<<< HEAD
-        Blunt: 0.65 # Goobstation - buffed values
-        Slash: 0.65
-        Piercing: 0.65
-        Heat: 0.65
-        Caustic: 0.70
-=======
         Blunt: 0.65
         Slash: 0.65
         Piercing: 0.65
         Heat: 0.65
         Caustic: 0.1 # the full 90% from ss13
->>>>>>> Goob/master
   - type: ExplosionResistance
     damageCoefficient: 0.9
   - type: ModifyDelayedKnockdown # Goobstation
@@ -716,11 +708,8 @@
     sprite: Clothing/OuterClothing/Coats/expensive_coat.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Coats/expensive_coat.rsi
-<<<<<<< HEAD
-=======
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatExpensive]
   id: ClothingOuterCoatExpensiveOpened
   name: expensive coat
->>>>>>> Goob/master

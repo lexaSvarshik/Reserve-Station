@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
 # SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
@@ -7,18 +5,13 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
->>>>>>> Goob/master
 # I don't want to clutter battery guns with these ones.
 
 - type: entity
   name: X-8 "Station Sweeper"
   parent: [BaseWeaponBattery, BaseGunWieldable, BaseCommandContraband]
   id: WeaponHeadOfSecurityRifle
-<<<<<<< HEAD
-  description: An elaborately designed rifle, firing shots of pure phoron. Low fire rate, high damage.
-=======
   description: An elaborately designed rifle, firing shots of pure phoron. Low fire rate, medium damage, insane capacity.
->>>>>>> Goob/master
   components:
   - type: Sprite
     sprite: _Goobstation/Objects/Weapons/Guns/Battery/HeadOfSecurity/rifle.rsi
@@ -36,11 +29,7 @@
     maxCharge: 1000
     startingCharge: 1000
   - type: Gun
-<<<<<<< HEAD
-    fireRate: 1.5
-=======
     fireRate: 1
->>>>>>> Goob/master
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -81,15 +70,9 @@
     maxCharge: 1000
     startingCharge: 1000
   - type: Gun
-<<<<<<< HEAD
-    minAngle: 2
-    maxAngle: 10
-    fireRate: 7
-=======
     minAngle: 5
     maxAngle: 50
     fireRate: 9
->>>>>>> Goob/master
     burstFireRate: 6
     angleIncrease: 3
     angleDecay: 10
@@ -180,11 +163,7 @@
   - type: Gun
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
-<<<<<<< HEAD
-    fireRate: 0.70
-=======
     fireRate: 0.25
->>>>>>> Goob/master
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -197,13 +176,8 @@
   - type: StaticPrice
     price: 2500
   - type: SpeedModifiedOnWield
-<<<<<<< HEAD
-    walkModifier: 0.80
-    sprintModifier: 0.80
-=======
     walkModifier: 0.5
     sprintModifier: 0.5
->>>>>>> Goob/master
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
     maxOffset: 8

@@ -529,13 +529,8 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitSecurityRed
-<<<<<<< HEAD
-  name: FI-52 "Honor Guard" hardsuit helmet
-  description: Security hardsuit helmet with the latest top secret NT-HUD software. Belongs to the HoS.
-=======
   name: head of security's voidsuit helmet # Goob edit
   description: Security voidsuit helmet with the latest top secret NT-HUD software. Belongs to the HoS. # Goob edit
->>>>>>> Goob/master
   components:
   - type: Sprite
     sprite: Clothing/Head/Hardsuits/security-red.rsi

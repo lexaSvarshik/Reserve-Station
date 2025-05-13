@@ -285,8 +285,4 @@
         layer:
         - HighImpassable
   - type: Transform
-<<<<<<< HEAD
-    noRot: true
-=======
     noRot: false
->>>>>>> Goob/master

@@ -567,19 +567,11 @@
   - type: HitscanBatteryAmmoProvider
     proto: RedHeavyLaser
     fireCost: 100
-<<<<<<< HEAD
-  # Goobstation
-  - type: Tag
-    tags:
-    - Rifle
-  - type: Item
-=======
   - type: Tag
     tags:
     - TurretCompatibleWeapon
     - Rifle # Goobstation
   - type: Item # Goobstation
->>>>>>> Goob/master
     size: Huge
     shape:
     - 0,0,4,1

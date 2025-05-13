@@ -114,12 +114,9 @@ uplink-whimsy-bundle-desc = Do YOU like spreading joy & whimsy? Well, Donk Co. h
 uplink-m7s-name = M7S "Ventilator"
 uplink-m7s-desc = The spread of this submachine gun gets tighter the longer you suppress your foes with it. The gunshots are suppressed too. Pretty convenient.
 
-<<<<<<< HEAD
-=======
 uplink-combat-shotgun-name = 'Bojevic' Combat shotgun
 uplink-combat-shotgun-desc = A beefy pump-action shotgun chambered in 8 gauge, with a 5 round magazine tube.
 
->>>>>>> Goob/master
 uplink-he1sg8-bundle-name = HE1S-G8 Bundle
 uplink-he1sg8-bundle-desc = High Energy One-Shell rifle bundle. Comes with 10 demolishing and 9 hypercharged Gauss-8 cartridges for some extra funny.
 
@@ -169,8 +166,6 @@ uplink-cartridge-G8-demolishing-desc = This cartridge shots "The Spear of Ares" 
 
 uplink-cartridge-G8-hypercharged-name = G8 hypercharged cartridge
 uplink-cartridge-G8-hypercharged-desc = This cartridge shots "The Bolt of Zeus" bullet, shocking everyone on its way and creating an energy vortex at its destination point, that creates a massive explosion on overcharge. Used by HE1S-G8.
-<<<<<<< HEAD
-=======
 
 uplink-high-caliber-shotgun-box-name = 8 Gauge shell box
 uplink-high-caliber-shotgun-box-desc = 16 shells of 8 Gauge shells, for the combat shotgun.
@@ -183,7 +178,6 @@ uplink-high-caliber-shotgun-box-flash-slug-desc = 16 shells of 8 Gauge flashbang
 
 uplink-high-caliber-shotgun-box-sarin-name = 8 Gauge sarin gas shell box
 uplink-high-caliber-shotgun-box-sarin-desc = 16 shells of 8 Gauge sarin shells for the combat shotgun, which release a small plus-shaped cloud of sarin gas.
->>>>>>> Goob/master
 
 # Grenades
 
@@ -251,10 +245,6 @@ uplink-cqc-desc = A manual that teaches a single user tactical Close-Quarters Co
 
 uplink-sleeping-carp-name = Way of the Sleeping Carp Scroll
 uplink-sleeping-carp-desc = This scroll contains the secrets of an ancient martial arts technique. You will master unarmed combat, deflecting ranged weapon fire, and space carp will become friendly to you. Learning this art means you will also refuse to use dishonorable ranged weaponry. Unable to be understood by changelings.
-<<<<<<< HEAD
-=======
-
->>>>>>> Goob/master
 
 # Misc
 
@@ -269,9 +259,6 @@ uplink-pizza-party-crate-desc = A crate coming in the form of disaster pizza del
 
 uplink-undetermined-bundle-name = Undetermined Bundle Crate
 uplink-undetermined-bundle-desc = This crate comes with three random bundles and allows to choose one of them. Guaranteed to include Syndicate encryption key.
-<<<<<<< HEAD
-=======
 
 uplink-energy-pickaxe-name = Energy Pickaxe
 uplink-energy-pickaxe-desc = A holographic mining tool with blades comprised of hard light that also serves a deadly melee weapon. Rock and stone!
->>>>>>> Goob/master

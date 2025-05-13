@@ -7,15 +7,8 @@
 tool-quality-axing-name = Axing
 tool-quality-axing-tool-name = Fireaxe
 
-<<<<<<< HEAD
-tool-quality-painting-name = Painting
-tool-quality-painting-tool-name = Spray Painter
-=======
-
 tool-quality-hammering-name = Hammering
 tool-quality-hammering-tool-name = Hammer
 
 tool-quality-painting-name = Painting
 tool-quality-painting-tool-name = Spray Painter
-
->>>>>>> Goob/master

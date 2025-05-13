@@ -50,8 +50,6 @@
     tags:
     - HereticItem
     - HereticBlade
-<<<<<<< HEAD
-=======
 
 - type: entity
   id: BaseRandomTeleportBlade
@@ -65,7 +63,6 @@
 - type: entity
   parent: [ HereticBladeBaseNoTeleport, BaseRandomTeleportBlade ]
   id: HereticBladeBase
->>>>>>> Goob/master
 
 - type: entity
   parent: HereticBladeBase

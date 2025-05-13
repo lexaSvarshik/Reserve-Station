@@ -186,13 +186,8 @@
   id: LaserSniper
   damage:
     types:
-<<<<<<< HEAD
-      Heat: 30
-      Shock: 10
-=======
       Heat: 20
       Shock: 20
->>>>>>> Goob/master
   muzzleFlash:
     sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
     state: muzzle_blue
@@ -207,12 +202,7 @@
   id: RedMediumSplitLaser
   damage:
     types:
-<<<<<<< HEAD
-      Heat: 20
-      Shock: 5
-=======
       Heat: 25
->>>>>>> Goob/master
   muzzleFlash:
     sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
     state: muzzle_laser
@@ -233,12 +223,7 @@
     impactEffect: BulletImpactEffectOrangeDisabler
     damage:
       types:
-<<<<<<< HEAD
-        Heat: 7
-        Shock: 1
-=======
         Heat: 5.5
->>>>>>> Goob/master
 
 - type: entity
   name: heavy laser bolt
@@ -357,9 +342,6 @@
       collection: WeakHit
     forceSound: true
 
-<<<<<<< HEAD
-
-=======
 - type: entity
   id: HolyBulletCharge
   name: holy bolt
@@ -408,4 +390,3 @@
       types:
         Piercing: 4
         Holy: 4
->>>>>>> Goob/master
