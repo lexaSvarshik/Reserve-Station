@@ -26,14 +26,9 @@
 - type: crimeAssistPage
   id: "questionDidVictimDie"
   locKey: "crime-assist-question-didvictimdie"
-  onYes: "questionIsVictimRemovedFromBody"
+  onYes: "questionWasDeathIntentional" #reserve edit
   onNo: "resultAssault"
 
-- type: crimeAssistPage
-  id: "questionIsVictimRemovedFromBody"
-  locKey: "crime-assist-question-victimremovedfrombody"
-  onYes: "resultDecorporealisation"
-  onNo: "questionWasDeathIntentional"
 
 - type: crimeAssistPage
   id: "questionWasDeathIntentional"
@@ -98,8 +93,14 @@
 - type: crimeAssistPage
   id: "questionWereThereManySuspects"
   locKey: "crime-assist-question-weretheremanysuspects"
-  onYes: "resultRioting"
+  onYes: "questionIsRiotMassive" #Reserve edit
   onNo: "questionWasDamageSmall"
+
+- type: crimeAssistPage
+  id: "questionIsRiotMassive"
+  locKey: "crime-assist-question-isriotmassive"
+  onYes: "resultMassRiot"
+  onNo: "resultRioting"
 
 - type: crimeAssistPage
   id: "questionWasDamageSmall"
@@ -320,11 +321,11 @@
   locKeyPunishment: "crime-assist-crimepunishment-grandsabotage"
 
 - type: crimeAssistPage
-  id: "resultDecorporealisation"
-  locKeyTitle: "crime-assist-crime-decorporealisation"
-  locKeyDescription: "crime-assist-crimedetail-decorporealisation"
+  id: "resultMassRiot" #Reserve edit
+  locKeyTitle: "crime-assist-crime-massriot"
+  locKeyDescription: "crime-assist-crimedetail-massriot"
   locKeySeverity: "crime-assist-crimetype-capital"
-  locKeyPunishment: "crime-assist-crimepunishment-decorporealisation"
+  locKeyPunishment: "crime-assist-crimepunishment-massriot"
 
 - type: crimeAssistPage
   id: "resultKidnapping"
