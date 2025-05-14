@@ -95,8 +95,7 @@
     issuer: objective-issuer-syndicate
   - type: RoleRequirement
     roles:
-      mindRoles:
-      - TraitorRole
+    - TraitorRole
 
 - type: entity
   abstract: true
@@ -180,6 +179,7 @@
   - type: TargetObjective
     title: objective-condition-kill-person-title
   - type: PickRandomPerson
+    onlyChoosableJobs: true # DeltaV
 
 - type: entity
   parent: [BaseTraitorObjective, BaseKillObjective]
