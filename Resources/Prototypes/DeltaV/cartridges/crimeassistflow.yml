@@ -13,15 +13,15 @@
 - type: crimeAssistPage
   id: "questionWasSomeoneAttacked"
   locKey: "crime-assist-question-wassomeoneattacked"
-  onYes: "questionWasItSentient" #Reserve edit
+  onYes: "questionWasWeaponUsed" #Reserve edit
   onNo: "questionHadRestrictedItem" #Reserve edit
 
 # Attack questions
 - type: crimeAssistPage
-  id: "questionWasItSentient" #Reserve edit
-  locKey: "crime-assist-question-wasitsentient" #Reserve edit
+  id: "questionWasWeaponUsed" #Reserve edit
+  locKey: "crime-assist-question-wasweaponused" #Reserve edit
   onYes: "questionDidVictimDie"
-  onNo: "resultAnimalCruelty" #101
+  onNo: "resultCruelty" #101
 
 - type: crimeAssistPage
   id: "questionDidVictimDie"
@@ -174,7 +174,7 @@
   locKeyPunishment: "crime-assist-crimepunishment-innocent"
 
 - type: crimeAssistPage
-  id: "resultAnimalCruelty"
+  id: "resultCruelty"
   locKeyTitle: "crime-assist-crime-animalcruelty"
   locKeyDescription: "crime-assist-crimedetail-animalcruelty"
   locKeySeverity: "crime-assist-crimetype-misdemeanour"

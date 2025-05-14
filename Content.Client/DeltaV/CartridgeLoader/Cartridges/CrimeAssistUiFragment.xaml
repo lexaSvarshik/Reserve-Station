@@ -8,9 +8,9 @@
         <RichTextLabel Name ="Punishment" Margin="0,20"/>
     </BoxContainer>
     <BoxContainer Name="QuestionBox" Orientation="Horizontal" HorizontalAlignment="Center"  HorizontalExpand="True" VerticalExpand="False">
-        <Button Name="StartButton" Access="Public" Text="Start"/>
-        <Button Name="HomeButton" Access="Public" Text="Home" Visible="False"/>
-        <Button Name="YesButton" Access="Public" Text="Yes" Visible="False"/>
-        <Button Name="NoButton" Access="Public" Text="No" Visible="False"/>
+        <Button Name="StartButton" Access="Public" Text="{Loc 'crime-assist-start-button'}"/>
+        <Button Name="HomeButton" Access="Public" Text="{Loc 'crime-assist-home-button'}" Visible="False"/>
+        <Button Name="YesButton" Access="Public" Text="{Loc 'crime-assist-yes-button'}" Visible="False"/>
+        <Button Name="NoButton" Access="Public" Text="{Loc 'crime-assist-no-button'}" Visible="False"/>
     </BoxContainer>
 </cartridges:CrimeAssistUiFragment>
