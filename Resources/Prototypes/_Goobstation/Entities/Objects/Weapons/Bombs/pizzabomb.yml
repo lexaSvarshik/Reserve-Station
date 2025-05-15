@@ -8,9 +8,9 @@
 - type: entity
   parent: [GrenadeBase, FoodBoxPizza]
   id: FoodBoxPizzaBomb
-  name: ent-FoodBoxPizza #Reserve edit
+  # name: pizza box #Reserve edit
   suffix: Bomb
-  description: ent-FoodBoxPizza.desc #Reserve edit
+  # description: A cardboard box for storing things. #Reserve edit
   components:
   - type: Sprite
     sprite: _Goobstation/Objects/Weapons/Bombs/Pizzabomb.rsi
