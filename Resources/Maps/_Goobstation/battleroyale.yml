@@ -37904,11 +37904,6 @@ entities:
           hard: False
           restitution: 0
           friction: 0.4
-    - type: ThrownItem
-      playLandSound: True
-      landTime: 41097.2467069
-      thrownTime: 41097.2255694
-      thrower: invalid
 - proto: DrinkBottleCognac
   entities:
   - uid: 9002
@@ -38425,7 +38420,6 @@ entities:
     - StationAiWhitelist
     - Faxecute
     - FaxMachine
-    - ItemSlots
   - uid: 5114
     components:
     - type: Transform
@@ -38438,7 +38432,6 @@ entities:
     - StationAiWhitelist
     - Faxecute
     - FaxMachine
-    - ItemSlots
   - uid: 13537
     components:
     - type: Transform
