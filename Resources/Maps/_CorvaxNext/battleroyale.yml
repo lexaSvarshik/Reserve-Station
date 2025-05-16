@@ -95,7 +95,7 @@ entities:
   - uid: 1
     components:
     - type: MetaData
-      name: Battleroyale #Reserve port
+      name: Battleroyale
     - type: DynamicRange
       range: 300
       isShrinking: true
@@ -116,7 +116,7 @@ entities:
     - type: MapLight
       ambientLightColor: '#707070FF'
     - type: Parallax
-      parallax: Water
+      parallax: SillyIsland #Same as water
     - type: MapAtmosphere
       space: False
       mixture:
@@ -144,7 +144,7 @@ entities:
   - uid: 2
     components:
     - type: MetaData
-      name: BattleRoyale #Reserve port
+      name: Battleroyale
     - type: Transform
       pos: 27.389267,22.759037
       parent: 1
@@ -27581,7 +27581,7 @@ entities:
         12,-9: 12451128042061824
     - type: ProtectedGrid
     - type: BecomesStation
-      id: BattleRoyale #Reserve port
+      id: Battleroyale
 - proto: AcousticGuitarInstrument
   entities:
   - uid: 4804
