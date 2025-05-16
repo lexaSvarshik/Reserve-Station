@@ -7,4 +7,6 @@
   - type: Sprite
     sprite: Corvax/Back/Duffels/military.rsi
   - type: Storage
-    capacity: 200
+    maxItemSize: Huge
+    grid:
+    - 0,0,8,4
