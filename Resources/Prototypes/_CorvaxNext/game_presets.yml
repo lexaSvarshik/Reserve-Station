@@ -8,7 +8,7 @@
     - Traitor
     - SubGamemodesRule
     - BasicStationEventScheduler
-    - MeteorSwarmScheduler
+    #- MeteorSwarmScheduler #Goob
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
 
@@ -24,3 +24,6 @@
   maxPlayers: 100
   rules:
     - BattleRoyale
+    #- MeteorSwarmScheduler #Goob
+    - SpaceTrafficControlEventScheduler
+    - BasicRoundstartVariation

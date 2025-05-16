@@ -360,7 +360,7 @@
     collection: FootstepWood
   barestepSounds:
     collection: BarestepWood
-  itemDrop: FloorTileItemWoodRed
+  itemDrop: FloorTileItemWoodChessRed
   heatCapacity: 10000
 
 - type: tile
