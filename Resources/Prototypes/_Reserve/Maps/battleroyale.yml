@@ -16,4 +16,4 @@
             prefixCreator: 'Королевская'
         - type: StationJobs
           availableJobs:
-            Passenger: [ -1, -1 ]
+            Assistant: [-1, -1]
