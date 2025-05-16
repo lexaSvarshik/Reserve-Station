@@ -95,7 +95,7 @@ entities:
   - uid: 1
     components:
     - type: MetaData
-      name: BattleRoyale #Reserve port
+      name: Battleroyale #Reserve port
     - type: DynamicRange
       range: 300
       isShrinking: true

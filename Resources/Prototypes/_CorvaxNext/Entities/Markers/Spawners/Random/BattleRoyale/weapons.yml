@@ -213,7 +213,7 @@
     - !type:GroupSelector
       weight: 10
       children:
-      - id: MagazineShotgunSlug 
+      - id: MagazineShotgunSlug
       - id: MagazineShotgunIncendiary
       - id: BoxShotgunUranium
       - id: ShellTranquilizer
@@ -356,7 +356,7 @@
       - id: MagazineBoxLightRifleBig
       - id: PowerCellMicroreactor
       - id: MagazineGrenadeFrag
-      
+
 
 - type: entity
   name: BR Carbine Spawner
@@ -430,7 +430,6 @@
       children:
       - id: C4
       - id: ClusterGrenade
-      - id: SingularityGrenade
       - id: WhiteholeGrenade
       - id: WeaponLauncherMultipleRocket
       - id: WeaponLauncherRocket

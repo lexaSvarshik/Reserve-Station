@@ -1,12 +1,12 @@
 - type: gameMap
   id: BattleRoyale
   mapName: 'Battle Royale'
-  mapPath: /Maps/_Goobstation/battleroyale.yml #Reserve port BattleRoyale
+  mapPath: /Maps/_CorvaxNext/battleroyale.yml #Reserve port BattleRoyale
   maxRandomOffset: 0
   randomRotation: false
   minPlayers: 0
   stations:
-    BattleRoyale:
+    Battleroyale:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup

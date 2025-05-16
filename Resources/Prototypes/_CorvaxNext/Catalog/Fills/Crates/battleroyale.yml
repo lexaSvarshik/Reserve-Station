@@ -446,9 +446,6 @@
     - id: ClusterGrenade
       prob: 0.022
       orGroup: BRHeavy
-    - id: SingularityGrenade
-      prob: 0.022
-      orGroup: BRHeavy
     - id: WhiteholeGrenade
       prob: 0.022
       orGroup: BRHeavy
