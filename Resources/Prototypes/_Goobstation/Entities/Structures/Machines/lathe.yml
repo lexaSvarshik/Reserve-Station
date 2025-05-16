@@ -32,6 +32,8 @@
   - type: Lathe
     idleState: icon
     runningState: icon
+    unlitIdleState: unlit # DeltaV - added animation sprite layers
+    unlitRunningState: unlit-building # DeltaV - added animation sprite layers
     staticPacks:
     - SharedBoardsStatic
     - EngineeringBoardsStatic
@@ -58,6 +60,7 @@
     - ShuttleBoards
     - BluespaceTheory
     - ScienceClothing
+    - UpgradeKits
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - SecurityBoards # TF2 reference, go build fucking turrets
@@ -93,6 +96,8 @@
   - type: Lathe
     idleState: icon
     runningState: icon
+    unlitIdleState: unlit # DeltaV - added animation sprite layers
+    unlitRunningState: unlit-building # DeltaV - added animation sprite layers
     staticPacks:
     - ToolsStatic
     - SharedBoardsStatic
@@ -153,6 +158,8 @@
   - type: Lathe
     idleState: icon
     runningState: icon
+    unlitIdleState: unlit # DeltaV - added animation sprite layers
+    unlitRunningState: unlit-building # DeltaV - added animation sprite layers
     staticPacks:
     - SharedBoardsStatic
     - EngineeringBoardsStatic
@@ -229,6 +236,8 @@
   - type: Lathe
     idleState: icon
     runningState: icon
+    unlitIdleState: unlit # DeltaV - added animation sprite layers
+    unlitRunningState: unlit-building # DeltaV - added animation sprite layers
     staticPacks:
     - ServiceBoardsStatic
     - MaterialsStatic

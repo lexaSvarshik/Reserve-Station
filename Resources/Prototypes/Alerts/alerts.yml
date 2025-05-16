@@ -155,6 +155,8 @@
     - alertType: Corporeal
     - alertType: Stun
     - alertType: KnockedDown # goobstation
+    - alertType: BrokenBones # Shitmed Change
+    - alertType: Stasis # Imp
     - category: Breathing # Vox gang not calling this oxygen
     - category: Pressure
     - alertType: Bleed
@@ -163,6 +165,7 @@
     - category: Thirst
     - alertType: Magboots
     - alertType: Pacified
+    - alertType: ShadowCloak # Goobstation
 
 - type: entity
   id: AlertSpriteView
